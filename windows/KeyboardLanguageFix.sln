@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2696B7B4-C237-43D6-BB20-635A17966E63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardLanguageFix.Core", "src\KeyboardLanguageFix.Core\KeyboardLanguageFix.Core.csproj", "{523D4EB3-AA84-455F-B0F8-5BD2D7FD3050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardLanguageFix.App", "src\KeyboardLanguageFix.App\KeyboardLanguageFix.App.csproj", "{F59A9F77-57AA-4F03-B98C-ABCD6E2B6DF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED0F61AE-3DF9-4298-BC73-4633B023EFA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardLanguageFix.Core.Tests", "tests\KeyboardLanguageFix.Core.Tests\KeyboardLanguageFix.Core.Tests.csproj", "{041FA774-2E67-4B4C-8A38-962E4D2D40E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{523D4EB3-AA84-455F-B0F8-5BD2D7FD3050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523D4EB3-AA84-455F-B0F8-5BD2D7FD3050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523D4EB3-AA84-455F-B0F8-5BD2D7FD3050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523D4EB3-AA84-455F-B0F8-5BD2D7FD3050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F59A9F77-57AA-4F03-B98C-ABCD6E2B6DF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F59A9F77-57AA-4F03-B98C-ABCD6E2B6DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F59A9F77-57AA-4F03-B98C-ABCD6E2B6DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F59A9F77-57AA-4F03-B98C-ABCD6E2B6DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041FA774-2E67-4B4C-8A38-962E4D2D40E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041FA774-2E67-4B4C-8A38-962E4D2D40E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041FA774-2E67-4B4C-8A38-962E4D2D40E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041FA774-2E67-4B4C-8A38-962E4D2D40E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{523D4EB3-AA84-455F-B0F8-5BD2D7FD3050} = {2696B7B4-C237-43D6-BB20-635A17966E63}
+		{F59A9F77-57AA-4F03-B98C-ABCD6E2B6DF3} = {2696B7B4-C237-43D6-BB20-635A17966E63}
+		{041FA774-2E67-4B4C-8A38-962E4D2D40E6} = {ED0F61AE-3DF9-4298-BC73-4633B023EFA6}
+	EndGlobalSection
+EndGlobal

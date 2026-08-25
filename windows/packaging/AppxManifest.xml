@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  MSIX manifest for the Microsoft Store.
+
+  Before your first submission, reserve the app name in Partner Center and copy
+  the three values it gives you into the Identity element below:
+
+      Identity/@Name              e.g. 12345Publisher.KeyboardLanguageFix
+      Identity/@Publisher         e.g. CN=ABCD1234-...-1234567890AB
+      Properties/PublisherDisplayName
+
+  build/build-msix.ps1 can substitute them for you; see windows/README.md.
+-->
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
+  IgnorableNamespaces="uap rescap desktop">
+
+  <Identity
+    Name="PUBLISHER.KeyboardLanguageFix"
+    Publisher="CN=REPLACE-WITH-YOUR-PARTNER-CENTER-PUBLISHER-ID"
+    Version="1.0.0.0"
+    ProcessorArchitecture="x64" />
+
+  <Properties>
+    <DisplayName>Keyboard Language Fix</DisplayName>
+    <PublisherDisplayName>REPLACE-WITH-YOUR-PUBLISHER-DISPLAY-NAME</PublisherDisplayName>
+    <Logo>Images\StoreLogo.png</Logo>
+    <Description>Typed in the wrong keyboard language? Select the text, press one shortcut, and it is re-typed in the language you meant.</Description>
+  </Properties>
+
+  <Dependencies>
+    <!-- 17763 (Windows 10 1809) is the oldest release with a supported MSIX stack. -->
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22621.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="en-us" />
+    <Resource Language="ar" />
+  </Resources>
+
+  <Capabilities>
+    <!-- Required for any Win32 (desktop) app in an MSIX package. It is a
+         restricted capability, and it is the standard, accepted declaration for
+         packaged desktop apps in the Store. The app uses it for exactly two
+         things: RegisterHotKey and SendInput. -->
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+
+  <Applications>
+    <Application Id="KeyboardLanguageFix"
+                 Executable="KeyboardLanguageFix.exe"
+                 EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements
+        DisplayName="Keyboard Language Fix"
+        Description="Re-types text that was typed on the wrong keyboard layout."
+        BackgroundColor="transparent"
+        Square150x150Logo="Images\Square150x150Logo.png"
+        Square44x44Logo="Images\Square44x44Logo.png">
+        <uap:DefaultTile
+          Wide310x150Logo="Images\Wide310x150Logo.png"
+          Square71x71Logo="Images\Square71x71Logo.png"
+          Square310x310Logo="Images\Square310x310Logo.png" />
+        <uap:SplashScreen Image="Images\SplashScreen.png" BackgroundColor="transparent" />
+      </uap:VisualElements>
+
+      <Extensions>
+        <!-- Offers "start with Windows". Windows, not the app, owns the switch:
+             the user confirms it the first time and can turn it off in
+             Settings > Apps > Startup. -->
+        <desktop:Extension
+          Category="windows.startupTask"
+          Executable="KeyboardLanguageFix.exe"
+          EntryPoint="Windows.FullTrustApplication">
+          <desktop:StartupTask
+            TaskId="KeyboardLanguageFixStartup"
+            Enabled="false"
+            DisplayName="Keyboard Language Fix" />
+        </desktop:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+</Package>

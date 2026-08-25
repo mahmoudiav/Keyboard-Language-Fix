@@ -4,9 +4,12 @@
   "private": true,
   "description": "Browser extension that re-types text typed on the wrong keyboard layout into the language the user meant.",
   "scripts": {
-    "test": "node --test test/converter.test.mjs test/manifest.test.mjs",
+    "test": "node --test test/converter.test.mjs test/manifest.test.mjs test/generated.test.mjs",
     "test:e2e": "node --test test/e2e.test.mjs",
-    "test:all": "node --test test/*.test.mjs",
+    "test:windows": "dotnet test windows/KeyboardLanguageFix.sln",
+    "test:packaging": "pwsh -File windows/build/test-build-msix.ps1",
+    "test:all": "npm test && npm run test:e2e && npm run test:windows && npm run test:packaging",
+    "generate": "node scripts/generate-cs-layouts.mjs && node scripts/generate-parity-fixture.mjs",
     "icons": "python3 scripts/make-icons.py",
     "build": "bash scripts/build.sh"
   },

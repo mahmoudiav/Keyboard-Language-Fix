@@ -19,6 +19,13 @@
 - **تخصيص**: اختصار داخل الصفحة، ومواقع مُستثناة، وتعديل جدول المفاتيح يدوياً.
 - **بلا خوادم**: كل شيء يجري داخل المتصفح، ولا يُرسل أي نص إلى أي مكان.
 
+## نسخة ويندوز
+
+يوجد أيضاً تطبيق سطح مكتب لويندوز في مجلد [`windows/`](windows/README.md) يعمل
+**خارج المتصفح**: في Word، وتيليجرام، وVS Code، وأي تطبيق آخر. نفس الاختصار،
+ونفس جداول التحويل المولَّدة من المصدر ذاته، ومهيّأ للنشر في متجر مايكروسوفت
+كحزمة MSIX.
+
 ## التثبيت أثناء التطوير
 
 **Chrome / Edge / Brave**
@@ -37,6 +44,7 @@
 ```bash
 npm test          # اختبارات التحويل والملفات (بلا متصفح)
 npm run test:e2e  # تشغيل الإضافة فعلياً داخل Chromium
+npm run test:windows  # اختبارات تطبيق ويندوز
 npm run build     # ينتج dist/keyboard-language-fix-{chrome,firefox}-<version>.zip
 ```
 
@@ -84,8 +92,11 @@ test/converter.test.mjs     unit tests for the engine and the layout tables
 test/manifest.test.mjs      manifest / locale consistency checks
 test/e2e.test.mjs           drives the loaded extension in Chromium
 test/manual.html            fixture page for the browser tests
-scripts/make-icons.py       renders icons/*.png
+scripts/make-icons.py       renders icons/*.png, the .ico and the Store logos
+scripts/generate-cs-layouts.mjs    layouts.js -> the Windows app's C# tables
+scripts/generate-parity-fixture.mjs  records this engine's output for the C# tests
 scripts/build.sh            packages the store zips
+windows/                    the Windows desktop app (see windows/README.md)
 ```
 
 ---
@@ -112,12 +123,28 @@ Highlights:
 - Right-click menu, plus a popup for converting pasted text by hand.
 - Everything runs locally; no text ever leaves the browser.
 
+### Windows desktop app
+
+[`windows/`](windows/README.md) holds a Windows tray app that does the same job
+**outside** the browser — in Word, Telegram, VS Code, anywhere. It is a .NET 8
+WPF app packaged as MSIX for the Microsoft Store.
+
+Both platforms share one source of truth: the C# layout tables are generated
+from `src/core/layouts.js`, and the C# test suite replays 1028 cases recorded
+from the JavaScript engine, so the two cannot drift apart.
+
+```bash
+npm run generate       # regenerate the C# tables after editing layouts.js
+npm run test:windows   # dotnet test — runs on Linux and macOS too
+npm run test:packaging # MSIX manifest and Store-requirement checks
+```
+
 ### Development
 
 ```bash
-npm test          # conversion, manifest and locale tests — no browser needed
+npm test          # conversion, manifest, locale and generated-file checks
 npm run test:e2e  # drives the real extension in Chromium (needs Playwright)
-npm run test:all  # both
+npm run test:all  # everything, including the Windows and packaging suites
 npm run icons     # regenerate icons/*.png
 npm run build     # package the store zips into dist/
 ```

@@ -1,0 +1,118 @@
+<Window x:Class="KeyboardLanguageFix.App.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Keyboard Language Fix — Settings"
+        Width="560" Height="700"
+        MinWidth="480" MinHeight="480"
+        WindowStartupLocation="CenterScreen"
+        Background="White"
+        FontFamily="Segoe UI"
+        FontSize="13">
+
+    <DockPanel Margin="16">
+
+        <Border DockPanel.Dock="Bottom" BorderThickness="0,1,0,0"
+                BorderBrush="{StaticResource Border}" Padding="0,12,0,0" Margin="0,8,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="SaveButton" Content="Save" Click="OnSave"
+                        Background="{StaticResource Accent}" Foreground="White"
+                        BorderBrush="{StaticResource Accent}" />
+                <Button Content="Close" Click="OnClose" Margin="8,0,0,0" />
+                <TextBlock x:Name="StatusText" VerticalAlignment="Center" Margin="12,0,0,0"
+                           Foreground="#167A4A" FontWeight="SemiBold" />
+            </StackPanel>
+        </Border>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="0,0,12,0">
+            <StackPanel>
+
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <TextBlock Text="Languages" Style="{StaticResource Heading}" />
+
+                        <TextBlock Text="My second keyboard layout" Style="{StaticResource FieldLabel}" />
+                        <ComboBox x:Name="PrimaryLayoutBox" SelectionChanged="OnPrimaryLayoutChanged" />
+                        <TextBlock Style="{StaticResource Hint}"
+                                   Text="English text is converted into this layout." />
+
+                        <TextBlock Text="Layouts to recognise when converting back to English"
+                                   Style="{StaticResource FieldLabel}" Margin="0,14,0,4" />
+                        <ItemsControl x:Name="EnabledLayoutsList">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <CheckBox Content="{Binding Display}" IsChecked="{Binding IsEnabled}" />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
+                        <TextBlock Text="Direction" Style="{StaticResource FieldLabel}" Margin="0,10,0,4" />
+                        <ComboBox x:Name="ModeBox" SelectionChanged="OnPreviewInputChanged">
+                            <ComboBoxItem Content="Automatic (detect from the text)" />
+                            <ComboBoxItem Content="Always English → my layout" />
+                            <ComboBoxItem Content="Always my layout → English" />
+                        </ComboBox>
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <TextBlock Text="Shortcut" Style="{StaticResource Heading}" />
+                        <StackPanel Orientation="Horizontal">
+                            <Border BorderBrush="{StaticResource Border}" BorderThickness="1"
+                                    CornerRadius="5" Padding="10,5" Background="White">
+                                <TextBlock x:Name="HotkeyText" FontFamily="Consolas" />
+                            </Border>
+                            <Button x:Name="RecordButton" Content="Record" Click="OnRecord" Margin="8,0,0,0" />
+                        </StackPanel>
+                        <TextBlock Style="{StaticResource Hint}"
+                                   Text="Press the keys you want, then release. Esc cancels. The shortcut needs Ctrl, Alt or the Windows key." />
+                        <TextBlock x:Name="HotkeyWarning" Style="{StaticResource Hint}"
+                                   Foreground="#B4531A" Visibility="Collapsed" />
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <TextBlock Text="Behaviour" Style="{StaticResource Heading}" />
+
+                        <TextBlock Text="How the replacement is delivered" Style="{StaticResource FieldLabel}" />
+                        <ComboBox x:Name="ReplaceMethodBox">
+                            <ComboBoxItem Content="Paste (fast, works everywhere)" />
+                            <ComboBoxItem Content="Type it out (never touches the clipboard)" />
+                        </ComboBox>
+
+                        <CheckBox x:Name="RestoreClipboardBox" Margin="0,12,0,8"
+                                  Content="Put my clipboard back afterwards" />
+                        <TextBlock Style="{StaticResource Hint}" Margin="0,0,0,10"
+                                   Text="Only text is restored. If the clipboard held an image or files, they are lost." />
+
+                        <CheckBox x:Name="NotificationsBox" Content="Show a notification after converting" />
+                        <CheckBox x:Name="StartupBox" Content="Start with Windows" Click="OnStartupClicked" />
+                        <TextBlock x:Name="StartupHint" Style="{StaticResource Hint}" />
+
+                        <TextBlock Text="How long to wait for the app to answer (ms)"
+                                   Style="{StaticResource FieldLabel}" Margin="0,14,0,4" />
+                        <TextBox x:Name="TimeoutBox" Width="90" HorizontalAlignment="Left" Padding="6,4" />
+                        <TextBlock Style="{StaticResource Hint}"
+                                   Text="Raise this if conversions fail in slow apps such as remote desktops." />
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <TextBlock Text="Try it" Style="{StaticResource Heading}" />
+                        <TextBox x:Name="PreviewInput" Padding="8,6" TextWrapping="Wrap"
+                                 AcceptsReturn="True" MinHeight="52"
+                                 TextChanged="OnPreviewInputChanged" />
+                        <TextBox x:Name="PreviewOutput" Padding="8,6" TextWrapping="Wrap" Margin="0,8,0,0"
+                                 AcceptsReturn="True" MinHeight="52" IsReadOnly="True"
+                                 Background="{StaticResource Surface}" />
+                        <TextBlock Style="{StaticResource Hint}"
+                                   Text="Type something here to see how it will be converted." />
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</Window>
