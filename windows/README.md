@@ -8,6 +8,48 @@ Default shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd>.
 The app has no window of its own. It sits in the notification area; double-click
 the tray icon for settings.
 
+## Getting an .exe
+
+### The short way
+
+1. Install the .NET 8 SDK once — `winget install Microsoft.DotNet.SDK.8`, or from
+   <https://dotnet.microsoft.com/download/dotnet/8.0>.
+2. Double-click **`windows\build\build-exe.cmd`**.
+3. It leaves `KeyboardLanguageFix.exe` in `windows\dist\exe` and opens the folder.
+
+Double-click the exe. Nothing appears to happen — that is correct, the app has no
+window. Its icon goes into the notification area beside the clock; click the `^`
+arrow if you do not see it. Now select some text anywhere and press
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd>.
+
+The file is about 70 MB because it carries its own copy of .NET, so it runs on
+any Windows 10 or 11 machine with nothing else installed. Copy it wherever you
+like — it needs no other file next to it, and there is nothing to install.
+
+The first time you run it, **Windows SmartScreen will warn you**, because the
+file is not code-signed. Choose *More info* → *Run anyway*. That warning appears
+for any unsigned program; it goes away if you sign the exe with a code-signing
+certificate, or if you install through the Store package instead.
+
+### Without installing anything
+
+Push the repository to GitHub and the included workflow
+(`.github/workflows/build.yml`) builds the exe for you. Open the **Actions** tab,
+click the newest run, and download `KeyboardLanguageFix-x64` from **Artifacts**.
+There is an `arm64` build there too, for Windows on ARM.
+
+### Options
+
+```powershell
+.\build-exe.ps1                              # one .exe (default)
+.\build-exe.ps1 -Mode Folder                 # .exe plus DLLs; starts faster
+.\build-exe.ps1 -Architecture arm64          # Windows on ARM
+.\build-exe.ps1 -Output C:\Tools\KLF         # somewhere else
+```
+
+To have it start with Windows, turn on *Start with Windows* in the app's
+settings.
+
 ## How it works
 
 Windows gives no application a way to read another app's selection directly.
@@ -60,7 +102,7 @@ dotnet build windows\KeyboardLanguageFix.sln -c Release
 dotnet run   --project windows\src\KeyboardLanguageFix.App   # on Windows
 ```
 
-A portable build, no installer:
+For a portable build, prefer `build-exe.ps1` above; the equivalent raw command is:
 
 ```powershell
 dotnet publish windows\src\KeyboardLanguageFix.App -c Release -r win-x64 `
@@ -156,6 +198,8 @@ windows/
     parity-fixture.json             GENERATED — 1028 recorded cases
   packaging/AppxManifest.xml        MSIX manifest
   packaging/Images/                 Store logos, generated
+  build/build-exe.ps1               builds a plain KeyboardLanguageFix.exe
+  build/build-exe.cmd               double-click wrapper for the above
   build/build-msix.ps1              publish + pack + optional test signing
   build/test-build-msix.ps1         packaging checks, runs anywhere
 ```

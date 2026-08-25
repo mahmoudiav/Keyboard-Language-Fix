@@ -26,6 +26,10 @@
 ونفس جداول التحويل المولَّدة من المصدر ذاته، ومهيّأ للنشر في متجر مايكروسوفت
 كحزمة MSIX.
 
+**لبناء ملف تنفيذي (.exe)**: ثبّت .NET 8 SDK ثم انقر نقراً مزدوجاً على
+`windows\build\build-exe.cmd`. التفاصيل والبدائل في
+[`windows/README.md`](windows/README.md#getting-an-exe).
+
 ## التثبيت أثناء التطوير
 
 **Chrome / Edge / Brave**
@@ -128,6 +132,11 @@ Highlights:
 [`windows/`](windows/README.md) holds a Windows tray app that does the same job
 **outside** the browser — in Word, Telegram, VS Code, anywhere. It is a .NET 8
 WPF app packaged as MSIX for the Microsoft Store.
+
+**To get an .exe**: install the .NET 8 SDK, then double-click
+`windows\build\build-exe.cmd` — see
+[windows/README.md](windows/README.md#getting-an-exe). Or push to GitHub and
+download it from the Actions tab; nothing to install locally.
 
 Both platforms share one source of truth: the C# layout tables are generated
 from `src/core/layouts.js`, and the C# test suite replays 1028 cases recorded

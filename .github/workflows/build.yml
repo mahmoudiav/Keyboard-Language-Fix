@@ -1,0 +1,82 @@
+name: Build
+
+# Two jobs:
+#   test   — the browser extension and the shared conversion engine (fast, Linux)
+#   windows — builds KeyboardLanguageFix.exe and attaches it to the run
+#
+# The Windows job means you never have to install the .NET SDK yourself: push,
+# open the run under the Actions tab, and download the exe from Artifacts.
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Extension and engine
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Unit, manifest, locale and generated-file checks
+        run: npm test
+
+      - name: Conversion engine and JavaScript/C# parity
+        run: dotnet test windows/KeyboardLanguageFix.sln --nologo
+
+      - name: MSIX packaging checks
+        shell: pwsh
+        run: ./windows/build/test-build-msix.ps1
+
+      - name: Install Chromium for the end-to-end tests
+        run: |
+          npm install --no-save playwright@^1.56.0
+          npx playwright install --with-deps chromium
+
+      - name: Browser end-to-end tests
+        run: npm run test:e2e
+
+      - name: Package the extension
+        run: npm run build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: browser-extension
+          path: dist/*.zip
+          if-no-files-found: error
+
+  windows:
+    name: Windows executable
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        architecture: [x64, arm64]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Build the executable
+        shell: pwsh
+        run: ./windows/build/build-exe.ps1 -Architecture ${{ matrix.architecture }} -Output out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: KeyboardLanguageFix-${{ matrix.architecture }}
+          path: out/KeyboardLanguageFix.exe
+          if-no-files-found: error
