@@ -119,7 +119,7 @@ public static class Converter
 
         var maps = GetMaps(layout, overrides);
         var converted = direction == ConversionDirection.ToLayout
-            ? Apply(text, maps.ToLayout, maps.ToLayoutWidths)
+            ? Apply(RelaxAccidentalCapitals(text, maps.ToLayout), maps.ToLayout, maps.ToLayoutWidths)
             : Apply(text, maps.ToLatin, maps.ToLatinWidths);
 
         return new ConversionResult(
@@ -168,6 +168,89 @@ public static class Converter
             else if (layout.MatchesScript(ch)) target++;
         }
         return (latin, target);
+    }
+
+    /// <summary>
+    /// Undoes capitals the user never typed.
+    /// </summary>
+    /// <remarks>
+    /// Word, phone keyboards and a stray Caps Lock all produce capitals the user
+    /// did not ask for. Sending those through the shifted layer puts punctuation
+    /// where a letter belongs: "lpl,]" is a name in Arabic, but Word's autocorrect
+    /// makes it "Lpl,]", and Shift+L on the Arabic layout is "/".
+    ///
+    /// Whether a capital was deliberate depends on the word it sits in, so this
+    /// works word by word rather than over the whole selection.
+    /// </remarks>
+    private static string RelaxAccidentalCapitals(string text, IReadOnlyDictionary<string, string> map)
+    {
+        var result = new StringBuilder(text.Length);
+        var word = new StringBuilder();
+
+        for (var index = 0; index <= text.Length; index++)
+        {
+            var atEnd = index == text.Length;
+            var ch = atEnd ? '\0' : text[index];
+
+            if (!atEnd && !IsWordBreak(ch))
+            {
+                word.Append(ch);
+                continue;
+            }
+
+            if (word.Length > 0)
+            {
+                result.Append(RelaxWord(word.ToString(), map));
+                word.Clear();
+            }
+
+            if (!atEnd) result.Append(ch);
+        }
+
+        return result.ToString();
+    }
+
+    /// <summary>
+    /// Word separators, spelled out rather than left to a regular expression:
+    /// .NET's \s and JavaScript's \s do not cover the same characters, and this
+    /// has to split words in exactly the same places as src/core/converter.js.
+    /// </summary>
+    private static bool IsWordBreak(char ch) =>
+        ch is ' ' or '\t' or '\n' or '\r' or '\f' or '\v' or '\u00a0' or '\u3000';
+
+    private static string RelaxWord(string word, IReadOnlyDictionary<string, string> map)
+    {
+        var letters = word.Where(ch => ch is >= 'A' and <= 'Z' or >= 'a' and <= 'z').ToArray();
+
+        // Caps Lock: nobody shift-types a whole word deliberately, so a capital
+        // anywhere in an all-capital word is suspect, not just one inside it.
+        var capsLock = letters.Length >= 2 && letters.All(ch => ch is >= 'A' and <= 'Z');
+
+        var result = new StringBuilder(word.Length);
+
+        for (var index = 0; index < word.Length; index++)
+        {
+            var ch = word[index];
+            var next = index + 1 < word.Length ? word[index + 1] : '\0';
+            var insideWord = index + 1 < word.Length && (next is >= 'A' and <= 'Z' or >= 'a' and <= 'z');
+
+            // Only a capital that yields something other than a letter can be an
+            // accident. This is what keeps Shift+H giving the Arabic alef with
+            // hamza, and what leaves Russian and Greek — whose shifted layer is
+            // simply their own upper case — completely untouched.
+            if (ch is >= 'A' and <= 'Z' &&
+                (capsLock || insideWord) &&
+                map.TryGetValue(ch.ToString(), out var shifted) &&
+                shifted.Length > 0 && !shifted.All(char.IsLetter))
+            {
+                result.Append(char.ToLowerInvariant(ch));
+                continue;
+            }
+
+            result.Append(ch);
+        }
+
+        return result.ToString();
     }
 
     private static string Apply(string text, IReadOnlyDictionary<string, string> map, IReadOnlyList<int> widths)

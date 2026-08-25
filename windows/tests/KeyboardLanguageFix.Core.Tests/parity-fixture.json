@@ -1808,7 +1808,7 @@
         "ar"
       ],
       "mode": "auto",
-      "expected": "’هءثي }ٍُِ شىي 123 ىعةلاثقس!",
+      "expected": "ةهءثي ؤشسث شىي 123 ىعةلاثقس!",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "ar"
@@ -1820,7 +1820,7 @@
         "ar"
       ],
       "mode": "toLayout",
-      "expected": "’هءثي }ٍُِ شىي 123 ىعةلاثقس!",
+      "expected": "ةهءثي ؤشسث شىي 123 ىعةلاثقس!",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "ar"
@@ -2301,6 +2301,618 @@
       ],
       "mode": "toLatin",
       "expected": "https:LLexample>comLpath?q=1",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "ar"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "محمود",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "محمود",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "lpl<D",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "محمود",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "محمود",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "Lpl<D",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "ar"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "محمود",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "محمود",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "LPL<D",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "أحمد",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "أحمد",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "HplD",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "ar"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "أحمد",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "أحمد",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "HPLD",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "Ok",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ar"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "OK",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ar"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "ؤشسث",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "ؤشسث",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "CASE",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ar"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "ةؤيخىشمي",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "ةؤيخىشمي",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "McDonald",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ar"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "السماء، قريبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "السماء، قريبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "hgslhxK rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ar"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "،",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "،",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "K",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ar"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "؛",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "؛",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "P",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ar"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "/",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "/",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "L",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ar"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "÷",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "÷",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "I",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ar"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "، قريبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "، قريبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "K rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ar"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "ِ4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "ِ4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "A4",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ar"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "auto",
+      "expected": "/د",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLayout",
+      "expected": "/د",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar"
+      ],
+      "mode": "toLatin",
+      "expected": "LD",
       "changed": true,
       "direction": "toLatin",
       "layoutId": "ar"
@@ -4520,7 +5132,7 @@
         "fa"
       ],
       "mode": "auto",
-      "expected": "ءهطثی ژؤئٍ شدی ۱۲۳ دعپذثقس!",
+      "expected": "ءهطثی ژؤئث شدی ۱۲۳ دعپذثقس!",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "fa"
@@ -4532,7 +5144,7 @@
         "fa"
       ],
       "mode": "toLayout",
-      "expected": "ءهطثی ژؤئٍ شدی ۱۲۳ دعپذثقس!",
+      "expected": "ءهطثی ژؤئث شدی ۱۲۳ دعپذثقس!",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "fa"
@@ -5015,6 +5627,618 @@
       "expected": "https://example.com/path?q=1",
       "changed": false,
       "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "محموچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "محموچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "lpl,O",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "محموچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "محموچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "Lpl,O",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "fa"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "محموچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "محموچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "LPL,O",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "آحمچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "آحمچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "HplO",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "fa"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "آحمچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "آحمچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "HPLO",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "Ok",
+      "changed": false,
+      "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "OK",
+      "changed": false,
+      "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "ژؤئث",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "ژؤئث",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "CASE",
+      "changed": false,
+      "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "ءزيخدشمی",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "ءزيخدشمی",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "McDonald",
+      "changed": false,
+      "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "السماط» قریبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "السماط» قریبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "hgslhxK rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "»",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "»",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "K",
+      "changed": false,
+      "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "P",
+      "changed": false,
+      "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "«",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "«",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "L",
+      "changed": false,
+      "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "ّ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "ّ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "I",
+      "changed": false,
+      "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "» قریبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "» قریبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "K rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "ؤ۴",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "ؤ۴",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "A4",
+      "changed": false,
+      "direction": null,
+      "layoutId": "fa"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "auto",
+      "expected": "«چ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLayout",
+      "expected": "«چ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "fa"
+      ],
+      "mode": "toLatin",
+      "expected": "LO",
+      "changed": true,
+      "direction": "toLatin",
       "layoutId": "fa"
     },
     {
@@ -7490,6 +8714,618 @@
       "layoutId": "ru"
     },
     {
+      "input": "lpl,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "дздбъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "дздбъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "lpl?]",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "ru"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "Дздбъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "Дздбъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "Lpl?]",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "ru"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "ДЗДбъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "ДЗДбъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "LPL?]",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "ru"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "Рздъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "Рздъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "Hpl]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "РЗДъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "РЗДъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "HPL]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "Щл",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "Щл",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "Ok",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "ЩЛ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "ЩЛ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "OK",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "СФЫУ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "СФЫУ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "CASE",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "ЬсВщтфдв",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "ЬсВщтфдв",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "McDonald",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "рпыдрчЛ кмвар",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "рпыдрчЛ кмвар",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "hgslhxK rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "Л",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "Л",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "K",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "З",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "З",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "P",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "Д",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "Д",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "L",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "Ш",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "Ш",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "I",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "Л кмвар",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "Л кмвар",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "K rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "Ф4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "Ф4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "A4",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "auto",
+      "expected": "Дъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLayout",
+      "expected": "Дъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ru"
+      ],
+      "mode": "toLatin",
+      "expected": "L]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "ru"
+    },
+    {
       "input": "q",
       "primaryLayout": "he",
       "enabledLayouts": [
@@ -9117,6 +10953,618 @@
       ],
       "mode": "toLatin",
       "expected": "https:qqexample/comqpath?q=1",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "he"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "ךפךת[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "ךפךת[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "lpl'[",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "he"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "ךפךת[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "ךפךת[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "Lpl'[",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "he"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "ךפךת[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "ךפךת[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "LPL'[",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "he"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "יפך[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "יפך[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "Hpl[",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "he"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "יפך[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "יפך[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "HPL[",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "he"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "םל",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "םל",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "Ok",
+      "changed": false,
+      "direction": null,
+      "layoutId": "he"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "םל",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "םל",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "OK",
+      "changed": false,
+      "direction": null,
+      "layoutId": "he"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "בשדק",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "בשדק",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "CASE",
+      "changed": false,
+      "direction": null,
+      "layoutId": "he"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "צבגםמשךג",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "צבגםמשךג",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "McDonald",
+      "changed": false,
+      "direction": null,
+      "layoutId": "he"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "יעדךיסל רהגכי",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "יעדךיסל רהגכי",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "hgslhxK rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "he"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "ל",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "ל",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "K",
+      "changed": false,
+      "direction": null,
+      "layoutId": "he"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "פ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "פ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "P",
+      "changed": false,
+      "direction": null,
+      "layoutId": "he"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "ך",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "ך",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "L",
+      "changed": false,
+      "direction": null,
+      "layoutId": "he"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "ן",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "ן",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "I",
+      "changed": false,
+      "direction": null,
+      "layoutId": "he"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "ל רהגכי",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "ל רהגכי",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "K rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "he"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "ש4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "ש4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "A4",
+      "changed": false,
+      "direction": null,
+      "layoutId": "he"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "auto",
+      "expected": "ך[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLayout",
+      "expected": "ך[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "he"
+      ],
+      "mode": "toLatin",
+      "expected": "L[",
       "changed": true,
       "direction": "toLatin",
       "layoutId": "he"
@@ -11138,6 +13586,618 @@
       "layoutId": "el"
     },
     {
+      "input": "lpl,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "λπλ,]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "λπλ,]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "lpl,]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Λπλ,]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "Λπλ,]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "Lpl,]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ΛΠΛ,]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "ΛΠΛ,]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "LPL,]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Ηπλ]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "Ηπλ]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "Hpl]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ΗΠΛ]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "ΗΠΛ]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "HPL]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Οκ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "Οκ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "Ok",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ΟΚ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "ΟΚ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "OK",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ΨΑΣΕ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "ΨΑΣΕ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "CASE",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ΜψΔοναλδ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "ΜψΔοναλδ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "McDonald",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ηγσληχΚ ρωδφη",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "ηγσληχΚ ρωδφη",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "hgslhxK rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Κ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "Κ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "K",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Π",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "Π",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "P",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Λ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "Λ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "L",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Ι",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "Ι",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "I",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Κ ρωδφη",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "Κ ρωδφη",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "K rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Α4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "Α4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "A4",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Λ]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLayout",
+      "expected": "Λ]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "el"
+      ],
+      "mode": "toLatin",
+      "expected": "L]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "el"
+    },
+    {
       "input": "hgsghl ugd;l",
       "primaryLayout": "ar",
       "enabledLayouts": [
@@ -11628,7 +14688,7 @@
         "el"
       ],
       "mode": "auto",
-      "expected": "’هءثي }ٍُِ شىي 123 ىعةلاثقس!",
+      "expected": "ةهءثي ؤشسث شىي 123 ىعةلاثقس!",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "ar"
@@ -11644,7 +14704,7 @@
         "el"
       ],
       "mode": "auto",
-      "expected": "ءهطثی ژؤئٍ شدی ۱۲۳ دعپذثقس!",
+      "expected": "ءهطثی ژؤئث شدی ۱۲۳ دعپذثقس!",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "fa"
@@ -12733,6 +15793,1366 @@
       ],
       "mode": "auto",
       "expected": "ηττπσ¨//εχαμπλε.ψομ/πατη?;=1",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "محمود",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "محموچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "дздбъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ךפךת[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "λπλ,]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "محمود",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "محموچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Дздбъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ךפךת[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Λπλ,]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "محمود",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "محموچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ДЗДбъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ךפךת[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ΛΠΛ,]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "أحمد",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "آحمچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Рздъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "יפך[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Ηπλ]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "أحمد",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "آحمچ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "РЗДъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "יפך[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ΗΠΛ]",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Щл",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "םל",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Οκ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "خن",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ЩЛ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "םל",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ΟΚ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ؤشسث",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ژؤئث",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "СФЫУ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "בשדק",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ΨΑΣΕ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ةؤيخىشمي",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ءزيخدشمی",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ЬсВщтфдв",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "צבגםמשךג",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ΜψΔοναλδ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "السماء، قريبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "السماط» قریبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "рпыдрчЛ кмвар",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "יעדךיסל רהגכי",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ηγσληχΚ ρωδφη",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "،",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "»",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Л",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ל",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Κ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "؛",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "З",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "פ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Π",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "/",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "«",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Д",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ך",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Λ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "÷",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ّ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Ш",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ן",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Ι",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "، قريبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "» قریبا",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Л кмвар",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ל רהגכי",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Κ ρωδφη",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ِ4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ؤ۴",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Ф4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ש4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Α4",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "el"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "ar",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "/د",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ar"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "fa",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "«چ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "fa"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "ru",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Дъ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "ru"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "he",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "ך[",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "he"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "el",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el"
+      ],
+      "mode": "auto",
+      "expected": "Λ]",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"

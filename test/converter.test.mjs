@@ -40,6 +40,40 @@ test('multi-character keys win over their first character', () => {
   assert.equal(convert('لإ', { ...ar, mode: 'toLatin' }).text, 'T');
 });
 
+test('a capital the user never typed does not become punctuation', () => {
+  // Word capitalises the first letter of a sentence, so "lpl,]" arrives as
+  // "Lpl,]" — and Shift+L on the Arabic layout is "/", not a letter.
+  assert.equal(convert('lpl,]', ar).text, 'محمود');
+  assert.equal(convert('Lpl,]', ar).text, 'محمود');
+});
+
+test('Caps Lock does not turn a word into punctuation either', () => {
+  assert.equal(convert('LPL,]', ar).text, 'محمود');
+});
+
+test('a capital that yields a real letter is left alone', () => {
+  // Shift+H is how you type أ; that capital is deliberate.
+  assert.equal(convert('Hpl]', ar).text, 'أحمد');
+  assert.equal(convert('HPL]', ar).text, 'أحمد');
+});
+
+test('punctuation typed with Shift still works', () => {
+  // "،" is Shift+K, always at the end of a word — never with a word glued to
+  // its right, which is exactly what separates it from an accidental capital.
+  assert.equal(convert('hgslhxK rvdfh', { ...ar, mode: 'toLayout' }).text, 'السماء، قريبا');
+  assert.equal(convert('K', { ...ar, mode: 'toLayout' }).text, '،');
+  assert.equal(convert('P', { ...ar, mode: 'toLayout' }).text, '؛');
+  assert.equal(convert('L', { ...ar, mode: 'toLayout' }).text, '/');
+});
+
+test('layouts whose shift layer is their own upper case are untouched', () => {
+  const ru = { primaryLayout: 'ru', enabledLayouts: ['ru'] };
+  const el = { primaryLayout: 'el', enabledLayouts: ['el'] };
+  assert.equal(convert('CASE', { ...ru, mode: 'toLayout' }).text, 'СФЫУ');
+  assert.equal(convert('Ghbdtn', ru).text, 'Привет');
+  assert.equal(convert('CASE', { ...el, mode: 'toLayout' }).text, 'ΨΑΣΕ');
+});
+
 test('auto direction follows the dominant script', () => {
   assert.equal(convert('hgsghl', ar).direction, 'toLayout');
   assert.equal(convert('اثممخ', ar).direction, 'toLatin');

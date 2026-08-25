@@ -89,6 +89,16 @@ for Store certification.
   method to "Type it out" to leave the clipboard alone entirely.
 - **Slow apps.** Remote desktops and some Electron apps answer the copy late.
   Raise the timeout in Settings if conversions come back empty.
+- **Word's auto-capitalisation.** Word capitalises the first letter of a
+  sentence as you type, which changes what you actually typed before the app
+  ever sees it. Most of that is undone automatically — a capital that would
+  turn into punctuation is treated as the accident it is, so `Lpl,]` still
+  becomes the name it was meant to be. Six Arabic letters cannot be recovered
+  that way, because their shifted key is a real letter: `Shift+H` is a
+  deliberate way to type أ, so `Hgsghl` gives `ألسلام` rather than `السلام`.
+  If that bothers you, turn the source off:
+  **File → Options → Proofing → AutoCorrect Options → uncheck
+  "Capitalize first letter of sentences"**.
 
 ## Building
 

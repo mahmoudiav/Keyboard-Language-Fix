@@ -54,6 +54,54 @@ public class ConverterTests
         Assert.Equal(key, Converter.Convert(ligature, Arabic(ConversionMode.ToLatin)).Text);
     }
 
+    [Theory]
+    // Word capitalises the first letter of a sentence, so "lpl,]" arrives as
+    // "Lpl,]" — and Shift+L on the Arabic layout is "/", not a letter.
+    [InlineData("lpl,]")]
+    [InlineData("Lpl,]")]
+    [InlineData("LPL,]")]   // ...and Caps Lock does the same thing
+    public void ACapitalTheUserNeverTypedDoesNotBecomePunctuation(string input)
+    {
+        Assert.Equal("محمود", Converter.Convert(input, Arabic()).Text);
+    }
+
+    [Theory]
+    [InlineData("Hpl]")]
+    [InlineData("HPL]")]
+    public void ACapitalThatYieldsARealLetterIsLeftAlone(string input)
+    {
+        // Shift+H is how you type the alef with hamza; that capital is deliberate.
+        Assert.Equal("أحمد", Converter.Convert(input, Arabic()).Text);
+    }
+
+    [Theory]
+    // These are typed with Shift at the end of a word, never with a word glued
+    // to their right, which is what separates them from an accidental capital.
+    [InlineData("K", "،")]
+    [InlineData("P", "؛")]
+    [InlineData("L", "/")]
+    [InlineData("hgslhxK rvdfh", "السماء، قريبا")]
+    public void PunctuationTypedWithShiftStillWorks(string input, string expected)
+    {
+        Assert.Equal(expected, Converter.Convert(input, Arabic(ConversionMode.ToLayout)).Text);
+    }
+
+    [Theory]
+    [InlineData("ru", "CASE", "СФЫУ")]
+    [InlineData("ru", "Ghbdtn", "Привет")]
+    [InlineData("el", "CASE", "ΨΑΣΕ")]
+    public void LayoutsWhoseShiftLayerIsTheirOwnUpperCaseAreUntouched(
+        string layoutId, string input, string expected)
+    {
+        var options = new ConversionOptions
+        {
+            PrimaryLayout = layoutId,
+            EnabledLayouts = new[] { layoutId },
+            Mode = ConversionMode.ToLayout
+        };
+        Assert.Equal(expected, Converter.Convert(input, options).Text);
+    }
+
     [Fact]
     public void AutoDirectionFollowsTheDominantScript()
     {

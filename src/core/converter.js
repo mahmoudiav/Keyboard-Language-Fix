@@ -13,6 +13,9 @@
 
   const LATIN_RE = /[A-Za-z]/;
 
+  /** True only when every character is a Unicode letter. */
+  const ALL_LETTERS_RE = /^\p{L}+$/u;
+
   /** Cache of compiled maps, keyed by layout id + a signature of the overrides. */
   const cache = new Map();
 
@@ -74,6 +77,77 @@
   /** Clear the compiled-map cache (call after the user edits custom mappings). */
   function invalidate() {
     cache.clear();
+  }
+
+  /**
+   * Undoes capitals the user never typed.
+   *
+   * Word, phone keyboards and a stray Caps Lock all produce capitals the user
+   * did not ask for. Sending those through the shifted layer puts punctuation
+   * where a letter belongs: "lpl,]" is a name in Arabic, but Word's autocorrect
+   * makes it "Lpl,]", and Shift+L on the Arabic layout is "/".
+   *
+   * Whether a capital was deliberate depends on the word it sits in, so this
+   * works word by word rather than over the whole selection.
+   */
+  function relaxAccidentalCapitals(text, map) {
+    let out = '';
+    let word = '';
+
+    for (let i = 0; i <= text.length; i += 1) {
+      const ch = i < text.length ? text[i] : null;
+      if (ch !== null && !isWordBreak(ch)) {
+        word += ch;
+        continue;
+      }
+      if (word) {
+        out += relaxWord(word, map);
+        word = '';
+      }
+      if (ch !== null) out += ch;
+    }
+
+    return out;
+  }
+
+  /**
+   * Word separators, spelled out rather than left to a regular expression:
+   * JavaScript's \s and .NET's \s do not cover the same characters, and the
+   * C# port of this file has to split words in exactly the same places.
+   */
+  function isWordBreak(ch) {
+    return ch === ' ' || ch === '\t' || ch === '\n' || ch === '\r' ||
+      ch === '\f' || ch === '\v' || ch === '\u00a0' || ch === '\u3000';
+  }
+
+  function relaxWord(word, map) {
+    const letters = word.match(/[A-Za-z]/g) || [];
+
+    // Caps Lock: nobody shift-types a whole word deliberately, so a capital
+    // anywhere in an all-capital word is suspect, not just one inside it.
+    const capsLock = letters.length >= 2 && letters.every((ch) => ch >= 'A' && ch <= 'Z');
+
+    let out = '';
+    for (let i = 0; i < word.length; i += 1) {
+      const ch = word[i];
+      const next = word[i + 1];
+      const insideWord = next !== undefined && LATIN_RE.test(next);
+
+      if (ch >= 'A' && ch <= 'Z' && (capsLock || insideWord)) {
+        const shifted = map.get(ch);
+        // Only a capital that yields something other than a letter can be an
+        // accident. This is what keeps "H" giving "أ", and what leaves Russian
+        // and Greek — whose shifted layer is simply their own upper case —
+        // completely untouched.
+        if (shifted && !ALL_LETTERS_RE.test(shifted)) {
+          out += ch.toLowerCase();
+          continue;
+        }
+      }
+
+      out += ch;
+    }
+    return out;
   }
 
   function applyMap(text, map, widths) {
@@ -182,7 +256,7 @@
     const overrides = opts.customMap ? opts.customMap[layout.id] : null;
     const maps = getMaps(layout, overrides);
     const out = direction === 'toLayout'
-      ? applyMap(text, maps.toLayout, maps.toLayoutWidths)
+      ? applyMap(relaxAccidentalCapitals(text, maps.toLayout), maps.toLayout, maps.toLayoutWidths)
       : applyMap(text, maps.toLatin, maps.toLatinWidths);
 
     return {

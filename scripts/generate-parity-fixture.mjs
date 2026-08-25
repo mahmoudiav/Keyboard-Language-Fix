@@ -26,7 +26,11 @@ const PHRASES = [
   'the quick brown fox jumps over the lazy dog', 'Mixed CASE and 123 numbers!',
   'trailing spaces   ', '   leading spaces', 'punctuation: ,./;\'[]\\-=`',
   'shifted punctuation: <>?:"{}|_+~', 'اثممخ صخقمي', 'привет мир',
-  'a', 'A', '', '   ', '123456789', 'user@example.com', 'https://example.com/path?q=1'
+  'a', 'A', '', '   ', '123456789', 'user@example.com', 'https://example.com/path?q=1',
+  // Capitals the user did not type: sentence auto-capitalisation and Caps Lock.
+  'lpl,]', 'Lpl,]', 'LPL,]', 'Hpl]', 'HPL]', 'Ok', 'OK', 'CASE', 'McDonald',
+  // Deliberate shifted punctuation, which must survive all of the above.
+  'hgslhxK rvdfh', 'K', 'P', 'L', 'I', 'K rvdfh', 'A4', 'L]'
 ];
 
 /** Every case the fixture covers, in a stable order. */
