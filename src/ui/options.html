@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="optionsTitle">Keyboard Language Fix — Settings</title>
+  <link rel="stylesheet" href="ui.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1 data-i18n="optionsTitle"></h1>
+  </header>
+
+  <section>
+    <h2 data-i18n="optSectionLanguages"></h2>
+    <div class="field">
+      <label for="primaryLayout" data-i18n="optPrimaryLayout"></label>
+      <select id="primaryLayout"></select>
+      <p class="help" data-i18n="optPrimaryLayoutHelp"></p>
+    </div>
+    <div class="field">
+      <label data-i18n="optEnabledLayouts"></label>
+      <div id="enabledLayouts"></div>
+    </div>
+    <div class="field">
+      <label for="mode" data-i18n="optMode"></label>
+      <select id="mode">
+        <option value="auto" data-i18n="optModeAuto"></option>
+        <option value="toLayout" data-i18n="optModeToLayout"></option>
+        <option value="toLatin" data-i18n="optModeToLatin"></option>
+      </select>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="optSectionBehaviour"></h2>
+    <div class="field">
+      <label for="noSelectionAction" data-i18n="optNoSelection"></label>
+      <select id="noSelectionAction">
+        <option value="lastWord" data-i18n="optNoSelLastWord"></option>
+        <option value="wholeField" data-i18n="optNoSelWholeField"></option>
+        <option value="nothing" data-i18n="optNoSelNothing"></option>
+      </select>
+    </div>
+    <label class="check">
+      <input type="checkbox" id="showToast">
+      <span data-i18n="optShowToast"></span>
+    </label>
+    <label class="check">
+      <input type="checkbox" id="copyWhenNotEditable">
+      <span data-i18n="optCopyWhenNotEditable"></span>
+    </label>
+  </section>
+
+  <section>
+    <h2 data-i18n="optSectionShortcut"></h2>
+    <div class="field">
+      <label data-i18n="optBrowserShortcut"></label>
+      <div class="row">
+        <kbd id="browserShortcut">…</kbd>
+        <a href="#" id="editShortcut" data-i18n="popupEditShortcut"></a>
+      </div>
+      <p class="help" data-i18n="optBrowserShortcutHelp"></p>
+    </div>
+    <label class="check">
+      <input type="checkbox" id="inPageHotkeyEnabled">
+      <span data-i18n="optInPageHotkey"></span>
+    </label>
+    <div class="row">
+      <kbd id="inPageHotkey">…</kbd>
+      <button id="record" type="button" data-i18n="optRecord"></button>
+    </div>
+    <p class="help" data-i18n="optInPageHotkeyHelp"></p>
+  </section>
+
+  <section>
+    <h2 data-i18n="optSectionSites"></h2>
+    <label class="sr-only" for="disabledSites" data-i18n="optSectionSites"></label>
+    <textarea id="disabledSites" rows="3" spellcheck="false"
+              placeholder="docs.google.com"></textarea>
+    <p class="help" data-i18n="optDisabledSites"></p>
+  </section>
+
+  <section>
+    <h2 data-i18n="optSectionCustom"></h2>
+    <label class="sr-only" for="customMap" data-i18n="optSectionCustom"></label>
+    <textarea id="customMap" rows="4" spellcheck="false" dir="ltr"></textarea>
+    <p class="help" data-i18n="optCustomHelp"></p>
+    <p class="help warn" id="customWarning" hidden data-i18n="optCustomInvalid"></p>
+  </section>
+
+  <section>
+    <h2 data-i18n="optSectionTry"></h2>
+    <div class="field">
+      <label class="sr-only" for="tryInput" data-i18n="popupInputLabel"></label>
+      <textarea id="tryInput" rows="2" spellcheck="false" dir="auto"
+                placeholder="hgsghl ugd;l"></textarea>
+    </div>
+    <div class="field">
+      <label class="sr-only" for="tryOutput" data-i18n="popupOutputLabel"></label>
+      <textarea id="tryOutput" rows="2" spellcheck="false" readonly dir="auto"></textarea>
+    </div>
+    <p class="help" data-i18n="optTryHelp"></p>
+  </section>
+
+  <div class="actions row">
+    <button id="save" class="primary" type="button" data-i18n="optSave"></button>
+    <button id="reset" type="button" data-i18n="optReset"></button>
+    <span class="status" id="status"></span>
+  </div>
+</div>
+
+<script src="../core/layouts.js"></script>
+<script src="../core/converter.js"></script>
+<script src="../core/settings.js"></script>
+<script src="i18n.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

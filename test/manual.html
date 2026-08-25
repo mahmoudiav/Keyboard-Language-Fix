@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Keyboard Language Fix — manual test page</title>
+<style>
+  body { font: 15px/1.6 system-ui, "Noto Sans Arabic", sans-serif; max-width: 760px;
+         margin: 40px auto; padding: 0 20px; color: #1b1f27; }
+  h1 { font-size: 22px; }
+  section { border: 1px solid #dfe3e8; border-radius: 10px; padding: 16px; margin: 16px 0; }
+  h2 { font-size: 15px; margin: 0 0 4px; }
+  p.note { color: #626b7a; font-size: 13px; margin: 0 0 10px; }
+  input, textarea { width: 100%; padding: 8px 10px; font: inherit;
+                    border: 1px solid #dfe3e8; border-radius: 7px; box-sizing: border-box; }
+  .editable { border: 1px solid #dfe3e8; border-radius: 7px; padding: 8px 10px; min-height: 44px; }
+  iframe { width: 100%; height: 90px; border: 1px solid #dfe3e8; border-radius: 7px; }
+  code { background: #f2f4f8; padding: 1px 5px; border-radius: 4px; }
+  ol { padding-left: 20px; }
+</style>
+</head>
+<body>
+<h1>Keyboard Language Fix — manual test page</h1>
+<p class="note">
+  Load the extension unpacked, open this file, then in each box select some text
+  (or leave the caret after a word) and press <code>Ctrl+Shift+Space</code>.
+  Sample input: <code>hgsghl</code> should become <code>السلام</code>.
+</p>
+
+<section>
+  <h2>1. text input</h2>
+  <p class="note">Expect: the selection is replaced, and Ctrl+Z restores it.</p>
+  <input type="text" value="hgsghl ugd;l" spellcheck="false">
+</section>
+
+<section>
+  <h2>2. textarea, multi-line</h2>
+  <p class="note">Expect: only the selected range changes.</p>
+  <textarea rows="3" spellcheck="false">lvpfh fpl
+;dt phg;</textarea>
+</section>
+
+<section>
+  <h2>3. no selection, caret after a word</h2>
+  <p class="note">Expect: only the word before the caret is converted.</p>
+  <input type="text" value="hello lvpfh" spellcheck="false">
+</section>
+
+<section>
+  <h2>4. contenteditable</h2>
+  <p class="note">Expect: the same behaviour inside a rich-text editor.</p>
+  <div class="editable" contenteditable="true">hgsghl ugd;l</div>
+</section>
+
+<section>
+  <h2>5. read-only text</h2>
+  <p class="note">Expect: nothing changes here; the result lands on the clipboard.</p>
+  <p>hgsghl ugd;l</p>
+</section>
+
+<section>
+  <h2>6. reverse direction</h2>
+  <p class="note">Expect: Arabic characters become the English that was meant.</p>
+  <input type="text" value="اثممخ صخقمي" spellcheck="false">
+</section>
+
+<section>
+  <h2>7. inside an iframe</h2>
+  <p class="note">Expect: the frame with the caret converts; the parent stays quiet.</p>
+  <iframe srcdoc="&lt;body style='font:15px system-ui;margin:8px'&gt;&lt;input style='width:95%;padding:6px' value='lvpfh' spellcheck='false'&gt;&lt;/body&gt;"></iframe>
+</section>
+
+<section>
+  <h2>8. number input (must be skipped)</h2>
+  <p class="note">Expect: no change — converting here would blank the field.</p>
+  <input type="number" value="12345">
+</section>
+</body>
+</html>

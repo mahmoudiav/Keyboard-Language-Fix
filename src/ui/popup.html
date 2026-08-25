@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="popupTitle">Keyboard Language Fix</title>
+  <link rel="stylesheet" href="ui.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1 data-i18n="popupTitle">Keyboard Language Fix</h1>
+    <p class="help" data-i18n="popupHint"></p>
+  </header>
+
+  <main>
+    <div class="field">
+      <label for="input" data-i18n="popupInputLabel"></label>
+      <textarea id="input" rows="3" spellcheck="false" autofocus></textarea>
+    </div>
+
+    <div class="row">
+      <button id="convert" class="primary" data-i18n="popupConvert"></button>
+      <select id="layout" aria-label="layout"></select>
+    </div>
+
+    <div class="field output">
+      <label for="output" data-i18n="popupOutputLabel"></label>
+      <textarea id="output" rows="3" spellcheck="false" readonly></textarea>
+      <div class="row">
+        <button id="copy" data-i18n="popupCopy"></button>
+        <button id="swap" data-i18n="popupSwap"></button>
+        <span class="status" id="status"></span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="help">
+      <span data-i18n="popupShortcutLabel"></span>:
+      <kbd id="shortcut">…</kbd>
+    </p>
+    <p class="links">
+      <a href="#" id="editShortcut" data-i18n="popupEditShortcut"></a>
+      <a href="#" id="options" data-i18n="popupOpenOptions"></a>
+    </p>
+  </footer>
+
+  <script src="../core/layouts.js"></script>
+  <script src="../core/converter.js"></script>
+  <script src="../core/settings.js"></script>
+  <script src="i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "keyboard-language-fix",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser extension that re-types text typed on the wrong keyboard layout into the language the user meant.",
+  "scripts": {
+    "test": "node --test test/converter.test.mjs test/manifest.test.mjs",
+    "test:e2e": "node --test test/e2e.test.mjs",
+    "test:all": "node --test test/*.test.mjs",
+    "icons": "python3 scripts/make-icons.py",
+    "build": "bash scripts/build.sh"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "playwright": "^1.56.0"
+  }
+}

@@ -1,0 +1,19 @@
+.page { max-width: 660px; margin: 0 auto; padding: 28px 20px 60px; }
+header { margin-bottom: 18px; }
+.actions {
+  position: sticky;
+  bottom: 0;
+  padding: 12px 0;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+.help.warn { color: #b4531a; }
+#enabledLayouts { display: grid; gap: 6px; }
+#primaryLayout, #mode, #noSelectionAction { max-width: 340px; }
+#tryOutput { background: var(--panel); }
+a { color: var(--accent); font-weight: 600; text-decoration: none; font-size: 12.5px; }
+a:hover { text-decoration: underline; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+}

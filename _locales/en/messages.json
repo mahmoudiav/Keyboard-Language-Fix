@@ -1,0 +1,64 @@
+{
+  "extName":            { "message": "Keyboard Language Fix" },
+  "extDescription":     { "message": "Typed in the wrong keyboard language? Select the text, press one shortcut, and it is re-typed in the language you meant." },
+  "commandConvert":     { "message": "Convert the selected text to the right keyboard language" },
+  "contextMenuConvert": { "message": "Fix keyboard language" },
+
+  "toastConverted":     { "message": "Converted" },
+  "toastCopied":        { "message": "Converted and copied — press Ctrl+V to paste" },
+  "toastCopyFailed":    { "message": "Could not copy the result" },
+
+  "popupTitle":         { "message": "Keyboard Language Fix" },
+  "popupHint":          { "message": "Select text on the page and press the shortcut. Or paste text here to convert it manually." },
+  "popupInputLabel":    { "message": "Text typed in the wrong language" },
+  "popupOutputLabel":   { "message": "Result" },
+  "popupConvert":       { "message": "Convert" },
+  "popupCopy":          { "message": "Copy" },
+  "popupCopied":        { "message": "Copied" },
+  "popupSwap":          { "message": "Use the result as input" },
+  "popupOpenOptions":   { "message": "Settings" },
+  "popupShortcutLabel": { "message": "Current shortcut" },
+  "popupShortcutUnset": { "message": "not set" },
+  "popupEditShortcut":  { "message": "Change shortcut" },
+
+  "optionsTitle":       { "message": "Keyboard Language Fix — Settings" },
+  "optSectionLanguages":{ "message": "Languages" },
+  "optPrimaryLayout":   { "message": "My second keyboard layout" },
+  "optPrimaryLayoutHelp":{ "message": "Latin text is converted into this layout." },
+  "optEnabledLayouts":  { "message": "Layouts to recognise when converting back to English" },
+  "optMode":            { "message": "Direction" },
+  "optModeAuto":        { "message": "Automatic (detect from the text)" },
+  "optModeToLayout":    { "message": "Always English → my layout" },
+  "optModeToLatin":     { "message": "Always my layout → English" },
+
+  "optSectionBehaviour":{ "message": "Behaviour" },
+  "optNoSelection":     { "message": "When nothing is selected" },
+  "optNoSelLastWord":   { "message": "Convert the word before the cursor" },
+  "optNoSelWholeField": { "message": "Convert the whole field" },
+  "optNoSelNothing":    { "message": "Do nothing" },
+  "optShowToast":       { "message": "Show a confirmation bubble after converting" },
+  "optCopyWhenNotEditable": { "message": "Copy the result to the clipboard when the text cannot be edited" },
+
+  "optSectionShortcut": { "message": "Shortcut" },
+  "optBrowserShortcut": { "message": "Browser shortcut" },
+  "optBrowserShortcutHelp": { "message": "Managed by the browser. Works even when the page has its own shortcuts." },
+  "optInPageHotkey":    { "message": "Also listen for this shortcut inside pages" },
+  "optInPageHotkeyHelp":{ "message": "A backup for pages or platforms where the browser shortcut does not reach the extension." },
+  "optRecord":          { "message": "Record" },
+  "optRecording":       { "message": "Press the keys…" },
+
+  "optSectionSites":    { "message": "Disabled sites" },
+  "optDisabledSites":   { "message": "One hostname per line. Subdomains are included." },
+
+  "optSectionCustom":   { "message": "Custom key mappings" },
+  "optCustomHelp":      { "message": "Optional. One mapping per line, written as key=character, to override the built-in table for the layout selected above. Example: q=ض" },
+  "optCustomInvalid":   { "message": "Ignored lines that are not in key=character form." },
+
+  "optSectionTry":      { "message": "Try it" },
+  "optTryHelp":         { "message": "Type or paste something here to see how it will be converted." },
+
+  "optSave":            { "message": "Save" },
+  "optSaved":           { "message": "Saved" },
+  "optReset":           { "message": "Reset to defaults" },
+  "optResetConfirm":    { "message": "Reset every setting to its default?" }
+}

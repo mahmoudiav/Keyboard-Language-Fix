@@ -1,0 +1,64 @@
+{
+  "extName":            { "message": "مصحّح لغة الكيبورد" },
+  "extDescription":     { "message": "كتبت بلغة الكيبورد الخطأ؟ حدّد النص واضغط اختصاراً واحداً ليُعاد كتابته باللغة التي قصدتها." },
+  "commandConvert":     { "message": "تحويل النص المحدَّد إلى لغة الكيبورد الصحيحة" },
+  "contextMenuConvert": { "message": "تصحيح لغة الكيبورد" },
+
+  "toastConverted":     { "message": "تم التحويل" },
+  "toastCopied":        { "message": "تم التحويل والنسخ — اضغط Ctrl+V للصق" },
+  "toastCopyFailed":    { "message": "تعذّر نسخ النتيجة" },
+
+  "popupTitle":         { "message": "مصحّح لغة الكيبورد" },
+  "popupHint":          { "message": "حدّد النص في الصفحة واضغط الاختصار. أو الصق النص هنا لتحويله يدوياً." },
+  "popupInputLabel":    { "message": "نص مكتوب بلغة خاطئة" },
+  "popupOutputLabel":   { "message": "النتيجة" },
+  "popupConvert":       { "message": "تحويل" },
+  "popupCopy":          { "message": "نسخ" },
+  "popupCopied":        { "message": "تم النسخ" },
+  "popupSwap":          { "message": "استخدام النتيجة كمدخل" },
+  "popupOpenOptions":   { "message": "الإعدادات" },
+  "popupShortcutLabel": { "message": "الاختصار الحالي" },
+  "popupShortcutUnset": { "message": "غير مُعيَّن" },
+  "popupEditShortcut":  { "message": "تغيير الاختصار" },
+
+  "optionsTitle":       { "message": "مصحّح لغة الكيبورد — الإعدادات" },
+  "optSectionLanguages":{ "message": "اللغات" },
+  "optPrimaryLayout":   { "message": "تخطيط الكيبورد الثاني لديّ" },
+  "optPrimaryLayoutHelp":{ "message": "يُحوَّل النص اللاتيني إلى هذا التخطيط." },
+  "optEnabledLayouts":  { "message": "التخطيطات التي تُميَّز عند التحويل إلى الإنجليزية" },
+  "optMode":            { "message": "الاتجاه" },
+  "optModeAuto":        { "message": "تلقائي (يُستنتج من النص)" },
+  "optModeToLayout":    { "message": "دائماً من الإنجليزية إلى تخطيطي" },
+  "optModeToLatin":     { "message": "دائماً من تخطيطي إلى الإنجليزية" },
+
+  "optSectionBehaviour":{ "message": "السلوك" },
+  "optNoSelection":     { "message": "عند عدم تحديد أي نص" },
+  "optNoSelLastWord":   { "message": "تحويل الكلمة التي قبل المؤشّر" },
+  "optNoSelWholeField": { "message": "تحويل الحقل بالكامل" },
+  "optNoSelNothing":    { "message": "لا شيء" },
+  "optShowToast":       { "message": "إظهار فقاعة تأكيد بعد التحويل" },
+  "optCopyWhenNotEditable": { "message": "نسخ النتيجة إلى الحافظة عندما يتعذّر تعديل النص" },
+
+  "optSectionShortcut": { "message": "الاختصار" },
+  "optBrowserShortcut": { "message": "اختصار المتصفح" },
+  "optBrowserShortcutHelp": { "message": "يديره المتصفح، ويعمل حتى لو كان للصفحة اختصاراتها الخاصة." },
+  "optInPageHotkey":    { "message": "الاستماع أيضاً لهذا الاختصار داخل الصفحات" },
+  "optInPageHotkeyHelp":{ "message": "بديل احتياطي للصفحات أو الأنظمة التي لا يصل فيها اختصار المتصفح إلى الإضافة." },
+  "optRecord":          { "message": "تسجيل" },
+  "optRecording":       { "message": "اضغط المفاتيح…" },
+
+  "optSectionSites":    { "message": "المواقع المُعطَّلة" },
+  "optDisabledSites":   { "message": "اسم مضيف واحد في كل سطر، وتشمل النطاقات الفرعية." },
+
+  "optSectionCustom":   { "message": "تخصيص تعيين المفاتيح" },
+  "optCustomHelp":      { "message": "اختياري. تعيين واحد في كل سطر بصيغة مفتاح=حرف، ليحلّ محل الجدول المدمج للتخطيط المحدَّد أعلاه. مثال: q=ض" },
+  "optCustomInvalid":   { "message": "تم تجاهل الأسطر غير المكتوبة بصيغة مفتاح=حرف." },
+
+  "optSectionTry":      { "message": "جرّبها" },
+  "optTryHelp":         { "message": "اكتب أو الصق شيئاً هنا لترى كيف سيُحوَّل." },
+
+  "optSave":            { "message": "حفظ" },
+  "optSaved":           { "message": "تم الحفظ" },
+  "optReset":           { "message": "استعادة الإعدادات الافتراضية" },
+  "optResetConfirm":    { "message": "استعادة جميع الإعدادات إلى قيمها الافتراضية؟" }
+}
