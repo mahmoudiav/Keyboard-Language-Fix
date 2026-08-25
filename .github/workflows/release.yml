@@ -80,6 +80,12 @@ jobs:
       - name: List what will be published
         run: ls -lh dist
 
+      - name: Publish checksums alongside the installers
+        working-directory: dist
+        run: |
+          sha256sum *-Setup.exe > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+
       - name: Create the release
         uses: softprops/action-gh-release@v2
         with:
@@ -87,32 +93,8 @@ jobs:
           draft: ${{ github.event_name == 'workflow_dispatch' }}
           tag_name: ${{ github.event_name == 'workflow_dispatch' && format('v{0}', inputs.version) || github.ref_name }}
           name: Keyboard Language Fix ${{ github.event_name == 'workflow_dispatch' && inputs.version || github.ref_name }}
-          files: dist/*-Setup.exe
-          body: |
-            **Typed in the wrong keyboard language?** Select the text, press
-            <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>, and it is re-typed
-            in the language you meant. Works in any Windows program.
-
-            ### Install
-
-            Download the `x64` file below and double-click it. Most PCs are x64;
-            choose `arm64` only for a Windows-on-ARM device such as a Surface
-            Pro X.
-
-            It installs for your user account only, so there is no administrator
-            prompt. Windows SmartScreen will warn the first time because the
-            file is not code-signed — choose **More info** then **Run anyway**.
-
-            After installing, the app sits in the notification area beside the
-            clock. Select some text anywhere and press the shortcut.
-
-            ### About
-
-            Idea and implementation: Mahmoud SATALEH
-            <mahmoudiav@icloud.com>
-
-            Free software — free to use and free to share. Released under the
-            MIT License.
-
-            Nothing you type or select is sent anywhere. There is no network
-            connection, no account and no telemetry.
+          # One source of truth for the wording, shared with a hand-made release.
+          body_path: .github/release-notes.md
+          files: |
+            dist/*-Setup.exe
+            dist/SHA256SUMS.txt
