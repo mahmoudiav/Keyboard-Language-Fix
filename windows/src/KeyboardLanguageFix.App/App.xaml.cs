@@ -23,6 +23,7 @@ public partial class App : Application
     private TextSwapper _swapper = null!;
     private TrayIcon _tray = null!;
     private SettingsWindow? _settingsWindow;
+    private AboutWindow? _aboutWindow;
     private bool _busy;
 
     /// <inheritdoc />
@@ -53,6 +54,7 @@ public partial class App : Application
         _tray = new TrayIcon();
         _tray.SettingsRequested += (_, _) => ShowSettings();
         _tray.ConvertRequested += async (_, _) => await ConvertSelectionAsync().ConfigureAwait(true);
+        _tray.AboutRequested += (_, _) => ShowAbout();
         _tray.ExitRequested += (_, _) => Shutdown();
 
         ApplyHotkey(announceFailure: true);
@@ -129,6 +131,20 @@ public partial class App : Application
         };
         _settingsWindow.Closed += (_, _) => _settingsWindow = null;
         _settingsWindow.Show();
+    }
+
+    /// <summary>Opens the About box, or brings the open one to the front.</summary>
+    internal void ShowAbout()
+    {
+        if (_aboutWindow is not null)
+        {
+            _aboutWindow.Activate();
+            return;
+        }
+
+        _aboutWindow = new AboutWindow();
+        _aboutWindow.Closed += (_, _) => _aboutWindow = null;
+        _aboutWindow.Show();
     }
 
     /// <inheritdoc />

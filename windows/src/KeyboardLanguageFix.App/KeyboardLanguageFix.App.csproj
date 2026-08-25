@@ -16,6 +16,10 @@
     <RootNamespace>KeyboardLanguageFix.App</RootNamespace>
     <Version>1.0.0</Version>
     <Product>Keyboard Language Fix</Product>
+    <Authors>Mahmoud SATALEH</Authors>
+    <Company>Mahmoud SATALEH</Company>
+    <Copyright>Copyright (c) Mahmoud SATALEH</Copyright>
+    <Description>Re-types text that was typed on the wrong keyboard layout.</Description>
     <!-- Lets the project compile on a non-Windows CI agent. Running still
          requires Windows; only the build is cross-platform. -->
     <EnableWindowsTargeting>true</EnableWindowsTargeting>

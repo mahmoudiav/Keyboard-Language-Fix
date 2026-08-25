@@ -1,0 +1,118 @@
+name: Release
+
+# Publishes the installer so it can be shared with a single public link.
+#
+#   git tag v1.0.0
+#   git push origin v1.0.0
+#
+# The run builds KeyboardLanguageFix-<version>-x64-Setup.exe (and the ARM64
+# build), verifies both, and attaches them to a GitHub Release. The Release
+# page is a public download URL — that is the link to hand out.
+#
+# It can also be started by hand from the Actions tab, which produces a draft
+# release you can look over before publishing.
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to build, without the leading v (e.g. 1.0.0)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  installer:
+    name: Build the installer
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        architecture: [x64, arm64]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      # NSIS cross-compiles, so the Windows installer is built on Linux.
+      - name: Install NSIS and 7z
+        run: sudo apt-get update && sudo apt-get install -y nsis p7zip-full
+
+      - name: Check the tag matches the version in the project
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          project=windows/src/KeyboardLanguageFix.App/KeyboardLanguageFix.App.csproj
+          version=$(grep -oP '(?<=<Version>)[^<]+' "$project" | head -1)
+          tag="${GITHUB_REF_NAME#v}"
+          if [ "$version" != "$tag" ]; then
+            echo "Tag $GITHUB_REF_NAME does not match <Version>$version</Version> in $project." >&2
+            echo "Update the project version, or tag v$version." >&2
+            exit 1
+          fi
+          echo "Building version $version."
+
+      - name: Build and verify
+        run: ./windows/build/build-setup.sh ${{ matrix.architecture }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: setup-${{ matrix.architecture }}
+          path: windows/dist/*-Setup.exe
+          if-no-files-found: error
+
+  release:
+    name: Publish the release
+    needs: installer
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: setup-*
+          merge-multiple: true
+          path: dist
+
+      - name: List what will be published
+        run: ls -lh dist
+
+      - name: Create the release
+        uses: softprops/action-gh-release@v2
+        with:
+          # A manual run produces a draft, so it can be checked before going out.
+          draft: ${{ github.event_name == 'workflow_dispatch' }}
+          tag_name: ${{ github.event_name == 'workflow_dispatch' && format('v{0}', inputs.version) || github.ref_name }}
+          name: Keyboard Language Fix ${{ github.event_name == 'workflow_dispatch' && inputs.version || github.ref_name }}
+          files: dist/*-Setup.exe
+          body: |
+            **Typed in the wrong keyboard language?** Select the text, press
+            <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>, and it is re-typed
+            in the language you meant. Works in any Windows program.
+
+            ### Install
+
+            Download the `x64` file below and double-click it. Most PCs are x64;
+            choose `arm64` only for a Windows-on-ARM device such as a Surface
+            Pro X.
+
+            It installs for your user account only, so there is no administrator
+            prompt. Windows SmartScreen will warn the first time because the
+            file is not code-signed — choose **More info** then **Run anyway**.
+
+            After installing, the app sits in the notification area beside the
+            clock. Select some text anywhere and press the shortcut.
+
+            ### About
+
+            Idea and implementation: Mahmoud SATALEH
+            <mahmoudiav@icloud.com>
+
+            Free software — free to use and free to share. Released under the
+            MIT License.
+
+            Nothing you type or select is sent anywhere. There is no network
+            connection, no account and no telemetry.

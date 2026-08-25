@@ -26,9 +26,12 @@
 ونفس جداول التحويل المولَّدة من المصدر ذاته، ومهيّأ للنشر في متجر مايكروسوفت
 كحزمة MSIX.
 
-**لبناء ملف تنفيذي (.exe)**: ثبّت .NET 8 SDK ثم انقر نقراً مزدوجاً على
-`windows\build\build-exe.cmd`. التفاصيل والبدائل في
-[`windows/README.md`](windows/README.md#getting-an-exe).
+**للمستخدم العادي**: نزّل ملف `Setup.exe` من صفحة
+[Releases](../../releases) وانقر عليه نقراً مزدوجاً. لا يحتاج صلاحيات مدير.
+
+**للمطوّر**: `./windows/build/build-setup.sh` يبني ملف التثبيت، أو
+`windows\build\build-exe.cmd` لملف تنفيذي مجرّد. التفاصيل في
+[`windows/README.md`](windows/README.md).
 
 ## التثبيت أثناء التطوير
 
@@ -133,10 +136,14 @@ Highlights:
 **outside** the browser — in Word, Telegram, VS Code, anywhere. It is a .NET 8
 WPF app packaged as MSIX for the Microsoft Store.
 
-**To get an .exe**: install the .NET 8 SDK, then double-click
-`windows\build\build-exe.cmd` — see
-[windows/README.md](windows/README.md#getting-an-exe). Or push to GitHub and
-download it from the Actions tab; nothing to install locally.
+**To install it**: download `Setup.exe` from the
+[Releases page](../../releases) and double-click it. Per-user install, no
+administrator rights needed.
+
+**To build it yourself**: `./windows/build/build-setup.sh` makes the installer
+(.NET 8 SDK and NSIS, both of which cross-compile), or
+`windows\build\build-exe.cmd` makes a plain executable. See
+[windows/README.md](windows/README.md).
 
 Both platforms share one source of truth: the C# layout tables are generated
 from `src/core/layouts.js`, and the C# test suite replays 1028 cases recorded
@@ -185,6 +192,13 @@ Add an entry to `LAYOUTS` in `src/core/layouts.js` with:
 The test suite checks every table for round-trip integrity and for keys that
 accidentally produce the same character twice, so a new layout is covered the
 moment it is added.
+
+### About
+
+Keyboard Language Fix — idea and implementation: **Mahmoud SATALEH**
+<mahmoudiav@icloud.com>
+
+Free software — free to use and free to share.
 
 ### License
 

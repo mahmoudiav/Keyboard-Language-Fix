@@ -17,6 +17,9 @@ internal sealed class TrayIcon : IDisposable
     /// <summary>Raised when the user triggers a conversion from the menu.</summary>
     internal event EventHandler? ConvertRequested;
 
+    /// <summary>Raised when the user opens the About box.</summary>
+    internal event EventHandler? AboutRequested;
+
     /// <summary>Raised when the user asks to quit.</summary>
     internal event EventHandler? ExitRequested;
 
@@ -28,12 +31,16 @@ internal sealed class TrayIcon : IDisposable
         var settingsItem = new ToolStripMenuItem("Settings…");
         settingsItem.Click += (_, _) => SettingsRequested?.Invoke(this, EventArgs.Empty);
 
+        var aboutItem = new ToolStripMenuItem("About");
+        aboutItem.Click += (_, _) => AboutRequested?.Invoke(this, EventArgs.Empty);
+
         var exitItem = new ToolStripMenuItem("Exit");
         exitItem.Click += (_, _) => ExitRequested?.Invoke(this, EventArgs.Empty);
 
         var menu = new ContextMenuStrip();
         menu.Items.Add(_convertItem);
         menu.Items.Add(settingsItem);
+        menu.Items.Add(aboutItem);
         menu.Items.Add(new ToolStripSeparator());
         menu.Items.Add(exitItem);
 

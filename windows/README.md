@@ -8,7 +8,77 @@ Default shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd>.
 The app has no window of its own. It sits in the notification area; double-click
 the tray icon for settings.
 
-## Getting an .exe
+## About
+
+    Keyboard Language Fix 1.0.0
+    Idea and implementation: Mahmoud SATALEH
+    mahmoudiav@icloud.com
+    Free software — free to use and free to share. MIT License.
+
+Shown in the app under **About**, reachable from the tray menu and from the
+Settings window. The version comes from the assembly, so it always matches the
+build people are actually running.
+
+## Sharing it: the installer
+
+`KeyboardLanguageFix-<version>-x64-Setup.exe` is the one file to hand out. A
+person downloads it, double-clicks it, clicks Install, and is done — there is no
+install-location prompt and no component list to read.
+
+It installs **for the current user only**, so there is no administrator prompt
+and nothing is written outside their own profile. That also means it can be
+installed on a locked-down work machine without involving IT. It adds a Start
+Menu shortcut, sets the app to start with Windows, and registers a normal entry
+under Settings → Apps so it can be removed the usual way. Uninstalling leaves
+the user's preferences in place, so reinstalling keeps their shortcut and
+layout.
+
+### Building it
+
+```bash
+./windows/build/build-setup.sh          # x64, about 49 MB
+./windows/build/build-setup.sh arm64    # Windows on ARM, about 43 MB
+```
+
+Needs the .NET 8 SDK and NSIS. Both cross-compile, so this works on Linux and
+macOS as well as Windows:
+
+| | |
+| --- | --- |
+| Windows | `winget install NSIS.NSIS` |
+| Debian/Ubuntu | `apt install nsis p7zip-full` |
+| macOS | `brew install makensis p7zip` |
+
+Every build is checked before it is handed over —
+`windows/installer/verify-setup.sh` confirms the version resource, that the
+payload really holds the app with its icons intact, and that the credit,
+contact address and licence made it in.
+
+### Publishing it
+
+Tag a version and the release workflow does the rest:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+It builds both architectures, verifies them, and attaches them to a GitHub
+Release. **That Release page is the public download link to share.** Nothing
+else needs to be published — people never see the source unless they want to.
+
+You can also start it by hand from the Actions tab, which produces a draft
+release to look over first.
+
+### Signing
+
+The installer is unsigned, so Windows SmartScreen shows a warning the first time
+anyone runs it: *More info* → *Run anyway*. That is normal for a free tool
+without a certificate. It goes away if you buy a code-signing certificate
+(roughly $200–400 a year) and sign both the installer and the app, or if people
+install through the Microsoft Store package instead.
+
+## Getting a plain .exe
 
 ### The short way
 
@@ -210,6 +280,10 @@ windows/
   packaging/Images/                 Store logos, generated
   build/build-exe.ps1               builds a plain KeyboardLanguageFix.exe
   build/build-exe.cmd               double-click wrapper for the above
+  build/build-setup.sh              builds the installer people download
+  installer/KeyboardLanguageFix.nsi the installer definition
+  installer/verify-setup.sh         checks a built installer before it ships
+  installer/README.txt              what the installer puts beside the app
   build/build-msix.ps1              publish + pack + optional test signing
   build/test-build-msix.ps1         packaging checks, runs anywhere
 ```

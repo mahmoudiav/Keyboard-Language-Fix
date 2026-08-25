@@ -58,6 +58,30 @@ jobs:
           path: dist/*.zip
           if-no-files-found: error
 
+  installer:
+    name: Installer
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      # NSIS cross-compiles, so the Windows installer is built and checked here
+      # on every push rather than only at release time.
+      - name: Install NSIS and 7z
+        run: sudo apt-get update && sudo apt-get install -y nsis p7zip-full
+
+      - name: Build and verify the installer
+        run: ./windows/build/build-setup.sh x64
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: KeyboardLanguageFix-Setup
+          path: windows/dist/*-Setup.exe
+          if-no-files-found: error
+
   windows:
     name: Windows executable
     runs-on: windows-latest

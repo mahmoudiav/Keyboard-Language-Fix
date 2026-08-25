@@ -7,6 +7,11 @@
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>1.0.0</Version>
+    <Product>Keyboard Language Fix</Product>
+    <Authors>Mahmoud SATALEH</Authors>
+    <Company>Mahmoud SATALEH</Company>
+    <Copyright>Copyright (c) Mahmoud SATALEH</Copyright>
     <!-- No Windows API surface here on purpose: the conversion logic must stay
          testable on any machine, and the Windows app is a thin shell over it. -->
   </PropertyGroup>

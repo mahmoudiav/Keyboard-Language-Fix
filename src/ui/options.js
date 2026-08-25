@@ -201,7 +201,17 @@
     } catch { /* leave the placeholder */ }
   }
 
+  /** The About block quotes the manifest, so it always matches what shipped. */
+  function showVersion() {
+    try {
+      $('aboutVersion').textContent = api.runtime.getManifest().version;
+    } catch {
+      // Leave it blank rather than showing a guess.
+    }
+  }
+
   async function init() {
+    showVersion();
     buildLayoutControls();
     config = await settings.get();
     fillForm();

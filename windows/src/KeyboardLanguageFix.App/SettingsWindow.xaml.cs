@@ -272,5 +272,8 @@ public partial class SettingsWindow : Window
         UpdatePreview();
     }
 
+    private void OnAbout(object sender, RoutedEventArgs e) =>
+        ((App)System.Windows.Application.Current).ShowAbout();
+
     private void OnClose(object sender, RoutedEventArgs e) => Close();
 }
