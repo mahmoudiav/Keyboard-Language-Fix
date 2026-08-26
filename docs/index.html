@@ -114,6 +114,14 @@
     },
     {
       "@type": "Question",
+      "name": "Why does Windows say the publisher is unknown?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SmartScreen shows that for any file it has not seen downloaded many times yet. It is a statement about how common the file is, not about its contents; Windows Defender found nothing in it. Click More info, then Run anyway. The source is public, the installer is built by GitHub from that source with a public build log, and every release publishes SHA-256 checksums and a signed provenance record you can verify."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Does it send my text anywhere?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -262,6 +270,7 @@ footer p { margin: 6px 0; }
   </div>
   <p class="note">
     Free, 49&nbsp;MB. Installs for your user account — no administrator rights needed.
+    <br>Windows will warn that the publisher is unknown — <a href="#safety">here is why</a>, and what to click.
     <br>On a Windows-on-ARM device?
     <a href="https://github.com/mahmoudiav/Keyboard-Language-Fix/releases/latest">Get the ARM64 build</a>.
   </p>
@@ -386,6 +395,48 @@ footer p { margin: 6px 0; }
   </p>
 </section>
 
+<section id="safety">
+  <h2>&ldquo;Windows says the publisher is unknown&rdquo;</h2>
+
+  <p>
+    You will see a blue box the first time you run the installer. Click
+    <strong>More info</strong>, then <strong>Run anyway</strong>.
+  </p>
+
+  <p>
+    Read what it actually says: SmartScreen <em>could not verify</em> the file
+    <em>because it is not commonly downloaded</em>. That is a statement about
+    popularity, not about the contents — Windows Defender did not find anything
+    in it. Every new program starts this way, and the warning fades as more
+    people install it. It says &ldquo;unknown publisher&rdquo; because the file
+    is not signed with a code-signing certificate, which costs a few hundred
+    dollars a year and this tool is free.
+  </p>
+
+  <p>You do not have to take that on trust. Instead:</p>
+
+  <ul class="plain">
+    <li><strong>Read the source.</strong> All of it is
+      <a href="https://github.com/mahmoudiav/Keyboard-Language-Fix">public</a>.</li>
+    <li><strong>Watch it being built.</strong> The installer is not uploaded from
+      anyone's computer — it is built by GitHub from that source, and the
+      <a href="https://github.com/mahmoudiav/Keyboard-Language-Fix/actions">build log is public</a>.</li>
+    <li><strong>Check the file you downloaded.</strong> Every release publishes
+      SHA-256 checksums, and a signed provenance record tying the exact bytes to
+      the exact commit. With
+      <a href="https://cli.github.com/">GitHub CLI</a>:
+      <br><code>gh attestation verify KeyboardLanguageFix-x64-Setup.exe --repo mahmoudiav/Keyboard-Language-Fix</code></li>
+    <li><strong>Scan it.</strong> Upload it to
+      <a href="https://www.virustotal.com/">VirusTotal</a> if you would like a
+      second opinion.</li>
+  </ul>
+
+  <p class="note">
+    The app makes no network connections at all, so there is nothing for it to
+    send anywhere even if you never take our word for it.
+  </p>
+</section>
+
 <section>
   <h2>Questions</h2>
 
@@ -397,10 +448,10 @@ footer p { margin: 6px 0; }
 
   <details>
     <summary>Windows shows a blue warning when I run the installer.</summary>
-    <p>Click <strong>More info</strong>, then <strong>Run anyway</strong>. Windows
-    SmartScreen shows this for any program that has not been signed with a paid
-    code-signing certificate, which most free tools have not. SHA-256 checksums are
-    published with every release if you would rather verify the file yourself.</p>
+    <p>Click <strong>More info</strong>, then <strong>Run anyway</strong>. The
+    warning means the file is not yet commonly downloaded, not that anything was
+    found in it. <a href="#safety">The full explanation is above</a>, along with
+    four ways to check the file yourself.</p>
   </details>
 
   <details>

@@ -17,7 +17,12 @@
 
 Download the file, double-click it, click **Install**. It installs for your user account only, so **no administrator rights are needed**.
 
-> **Windows will show a blue warning the first time.** Click **More info**, then **Run anyway**. This appears for any free program without a paid code-signing certificate. If you would rather check the file yourself, the SHA-256 checksums are attached below.
+> **Windows will show a blue warning the first time.** Click **More info**, then **Run anyway**.
+>
+> Read what it says: SmartScreen *could not verify* the file *because it is not commonly downloaded*. That is about how popular the file is, not about what is in it — Defender found nothing. It says "unknown publisher" because the file is not signed with a code-signing certificate, which costs a few hundred dollars a year and this tool is free.
+>
+> You can check it yourself instead of trusting it: the source is public, the installer is built by GitHub from that source with a public build log, `SHA256SUMS.txt` is attached below, and each file carries a signed provenance record —
+> `gh attestation verify KeyboardLanguageFix-x64-Setup.exe --repo mahmoudiav/Keyboard-Language-Fix`
 
 ## Using it
 
