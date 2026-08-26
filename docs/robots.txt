@@ -1,0 +1,5 @@
+# Everything here is meant to be found.
+User-agent: *
+Allow: /
+
+Sitemap: https://mahmoudiav.github.io/Keyboard-Language-Fix/sitemap.xml

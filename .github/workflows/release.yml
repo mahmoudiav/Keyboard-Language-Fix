@@ -80,6 +80,21 @@ jobs:
       - name: List what will be published
         run: ls -lh dist
 
+      # A second copy without the version in the name. GitHub's
+      # /releases/latest/download/<name> URL matches on the exact filename, so
+      # only an unversioned asset gives a link that survives the next release —
+      # which is what the website and any shared link point at.
+      - name: Add permanent-link copies
+        working-directory: dist
+        run: |
+          for file in *-Setup.exe; do
+            case "$file" in
+              *-arm64-Setup.exe) cp "$file" KeyboardLanguageFix-arm64-Setup.exe ;;
+              *-x64-Setup.exe)   cp "$file" KeyboardLanguageFix-x64-Setup.exe ;;
+            esac
+          done
+          ls -1
+
       - name: Publish checksums alongside the installers
         working-directory: dist
         run: |

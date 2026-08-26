@@ -1,8 +1,27 @@
+# Keyboard Language Fix — مصحّح لغة الكيبورد
+
+**Text typed in the wrong keyboard layout, fixed in one keystroke.** Select it,
+press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>, and it is re-typed in
+the language you meant — no deleting, no retyping. A free Windows app and a
+browser extension, for Arabic, Persian, Russian, Hebrew and Greek.
+
+**كتبت بلغة الكيبورد الخطأ؟** حدّد النص واضغط اختصاراً واحداً، فيُعاد كتابته
+باللغة التي قصدتها. مجاني، لويندوز وللمتصفحات.
+
+[**Download for Windows**](../../releases/latest) ·
+[**Website**](https://mahmoudiav.github.io/Keyboard-Language-Fix/) ·
+[Browser extension](#development)
+
+```
+hgsghl ugd;l   →   السلام عليكم
+ghbdtn         →   привет
+```
+
 <div dir="rtl">
 
-# مصحّح لغة الكيبورد — Keyboard Language Fix
+## بالعربية
 
-إضافة للمتصفح تُنقذك عندما تكتب بلغة الكيبورد الخطأ.
+إضافة للمتصفح وتطبيق لويندوز يُنقذانك عندما تكتب بلغة الكيبورد الخطأ.
 
 تكتب `hgsghl` وأنت تقصد `السلام`؟ حدّد النص، اضغط <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd>، فيُعاد كتابته فوراً باللغة التي قصدتها — دون حذف وإعادة كتابة.
 

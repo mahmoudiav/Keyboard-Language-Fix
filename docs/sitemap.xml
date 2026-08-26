@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://mahmoudiav.github.io/Keyboard-Language-Fix/</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en"
+                href="https://mahmoudiav.github.io/Keyboard-Language-Fix/"/>
+    <xhtml:link rel="alternate" hreflang="ar"
+                href="https://mahmoudiav.github.io/Keyboard-Language-Fix/#ar"/>
+  </url>
+</urlset>
