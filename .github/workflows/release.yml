@@ -20,6 +20,10 @@ on:
       version:
         description: 'Version to build, without the leading v (e.g. 1.0.0)'
         required: true
+      draft:
+        description: 'Publish as a draft. Leave off to add files to an existing release.'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -42,15 +46,16 @@ jobs:
       - name: Install NSIS and 7z
         run: sudo apt-get update && sudo apt-get install -y nsis p7zip-full
 
-      - name: Check the tag matches the version in the project
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: Check the requested version matches the project
+        env:
+          REQUESTED: ${{ github.event_name == 'workflow_dispatch' && inputs.version || github.ref_name }}
         run: |
           project=windows/src/KeyboardLanguageFix.App/KeyboardLanguageFix.App.csproj
           version=$(grep -oP '(?<=<Version>)[^<]+' "$project" | head -1)
-          tag="${GITHUB_REF_NAME#v}"
-          if [ "$version" != "$tag" ]; then
-            echo "Tag $GITHUB_REF_NAME does not match <Version>$version</Version> in $project." >&2
-            echo "Update the project version, or tag v$version." >&2
+          requested="${REQUESTED#v}"
+          if [ "$version" != "$requested" ]; then
+            echo "Asked for $requested but the project says <Version>$version</Version>." >&2
+            echo "Update $project, or ask for $version." >&2
             exit 1
           fi
           echo "Building version $version."
@@ -104,8 +109,9 @@ jobs:
       - name: Create the release
         uses: softprops/action-gh-release@v2
         with:
-          # A manual run produces a draft, so it can be checked before going out.
-          draft: ${{ github.event_name == 'workflow_dispatch' }}
+          # Off by default so a manual run tops up an existing published release
+          # rather than un-publishing it.
+          draft: ${{ github.event_name == 'workflow_dispatch' && inputs.draft }}
           tag_name: ${{ github.event_name == 'workflow_dispatch' && format('v{0}', inputs.version) || github.ref_name }}
           name: Keyboard Language Fix ${{ github.event_name == 'workflow_dispatch' && inputs.version || github.ref_name }}
           # One source of truth for the wording, shared with a hand-made release.
