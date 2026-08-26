@@ -28,6 +28,12 @@ on:
 permissions:
   contents: write
 
+# Never cancel a release in flight — it publishes files people download. This
+# only stops the same tag being released twice at once.
+concurrency:
+  group: release-${{ github.event_name == 'workflow_dispatch' && inputs.version || github.ref_name }}
+  cancel-in-progress: false
+
 jobs:
   installer:
     name: Build the installer
@@ -41,6 +47,8 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
+          cache: true
+          cache-dependency-path: windows/**/*.csproj
 
       # NSIS cross-compiles, so the Windows installer is built on Linux.
       - name: Install NSIS and 7z
