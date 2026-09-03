@@ -13,6 +13,10 @@
  * `shiftFallback: true` means the layout has no real case distinction
  * (Hebrew, and for keys we do not model) so an upper-case Latin letter is
  * folded down to the base layer instead of being left untouched.
+ *
+ * `sameScript: true` marks a layout that writes the Latin alphabet too
+ * (Spanish), where the direction of a conversion cannot be guessed by weighing
+ * Latin letters against another alphabet. See `script` on that layout.
  */
 (function (root) {
   'use strict';
@@ -155,7 +159,72 @@
     }
   };
 
-  const LAYOUTS = [ARABIC, PERSIAN, RUSSIAN, HEBREW, GREEK];
+  /**
+   * Spanish (Spain) — the standard Windows "Spanish" layout.
+   *
+   * The odd one out: it shares the Latin alphabet with English. a-z sit on the
+   * same keys, so nothing about the letters changes — what moves is the
+   * punctuation, and what is gained is "ñ" and the accents. That is exactly
+   * the everyday complaint ("Espa;a" for "España", "est'a" for "está"), and it
+   * is why this layout is marked `sameScript`: the direction cannot be decided
+   * by counting Latin letters when both sides are Latin.
+   *
+   * The accents are dead keys. On a Spanish keyboard "á" is the acute key and
+   * then "a", which on a US keyboard comes out as "'" and then "a" — so the
+   * pairs are spelled out below as two-character keys, which the greedy
+   * matcher already understands from the Arabic "لا" ligature.
+   *
+   * The 102nd key ISO keyboards carry beside the left Shift (< > |) has no US
+   * counterpart, so it cannot be reached from here. Neither can the AltGr
+   * layer (@ # ~ [ ] { } €), which is a third layer this model does not have.
+   */
+  const SPANISH = {
+    id: 'es',
+    name: 'Spanish (Spain)',
+    nameLocal: 'Español (España)',
+    rtl: false,
+    shiftFallback: false,
+    // Both layouts write Latin, so `script` cannot mean "a different alphabet"
+    // here. See the comment above and `sameScript` in converter.js.
+    sameScript: true,
+    // Deliberately only what a US keyboard cannot produce at all. The keys the
+    // two layouts merely swap — ; ' [ ] \ / and the number row — are ordinary
+    // English punctuation, and putting them here would read plain English as
+    // Spanish.
+    script: /[ñÑçÇ¿¡ºª·´¨áéíóúÁÉÍÓÚàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛäëïöüÄËÏÖÜ]/,
+    base: {
+      '`': 'º',
+      '-': "'", '=': '¡',
+      '[': '`', ']': '+',
+      ';': 'ñ', "'": '´',
+      '\\': 'ç',
+      '/': '-',
+      // Acute, the key US QWERTY calls ' — "'a" is two keystrokes, one letter.
+      "'a": 'á', "'e": 'é', "'i": 'í', "'o": 'ó', "'u": 'ú',
+      "'A": 'Á', "'E": 'É', "'I": 'Í', "'O": 'Ó', "'U": 'Ú',
+      // Grave, the key US QWERTY calls [.
+      '[a': 'à', '[e': 'è', '[i': 'ì', '[o': 'ò', '[u': 'ù',
+      '[A': 'À', '[E': 'È', '[I': 'Ì', '[O': 'Ò', '[U': 'Ù'
+    },
+    shift: {
+      '~': 'ª',
+      '@': '"', '#': '·', '^': '&', '&': '/', '*': '(', '(': ')', ')': '=',
+      '_': '?', '+': '¿',
+      '{': '^', '}': '*',
+      ':': 'Ñ', '"': '¨',
+      '|': 'Ç',
+      '<': ';', '>': ':', '?': '_',
+      // Diaeresis, Shift + the acute key. "ü" is the one Spanish needs; the
+      // rest are what the same dead key gives on the other vowels.
+      '"a': 'ä', '"e': 'ë', '"i': 'ï', '"o': 'ö', '"u': 'ü',
+      '"A': 'Ä', '"E': 'Ë', '"I': 'Ï', '"O': 'Ö', '"U': 'Ü',
+      // Circumflex, Shift + the grave key.
+      '{a': 'â', '{e': 'ê', '{i': 'î', '{o': 'ô', '{u': 'û',
+      '{A': 'Â', '{E': 'Ê', '{I': 'Î', '{O': 'Ô', '{U': 'Û'
+    }
+  };
+
+  const LAYOUTS = [ARABIC, PERSIAN, RUSSIAN, HEBREW, GREEK, SPANISH];
 
   const byId = Object.create(null);
   for (const l of LAYOUTS) byId[l.id] = l;

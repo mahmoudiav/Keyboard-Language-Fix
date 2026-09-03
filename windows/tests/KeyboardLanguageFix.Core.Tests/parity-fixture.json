@@ -14198,6 +14198,2946 @@
       "layoutId": "el"
     },
     {
+      "input": "`",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "º",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "º",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "`",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "-",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "'",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "'",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "-",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "=",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "¡",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "¡",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "=",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "[",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "`",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "`",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "[",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "+",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "]",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": ";",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ñ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ñ",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": ";",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "'",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "´",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "´",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "'",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\\",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ç",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ç",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\\",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "/",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "-",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "-",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "/",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "'a",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "á",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "á",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "'a",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "'e",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "é",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "é",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "'e",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "'i",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "í",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "í",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "'i",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "'o",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ó",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ó",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "'o",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "'u",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ú",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ú",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "'u",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "'A",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Á",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Á",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "'A",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "'E",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "É",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "É",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "'E",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "'I",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Í",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Í",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "'I",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "'O",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ó",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ó",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "'O",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "'U",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ú",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ú",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "'U",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "[a",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "à",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "à",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "[a",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "[e",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "è",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "è",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "[e",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "[i",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ì",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ì",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "[i",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "[o",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ò",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ò",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "[o",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "[u",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ù",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ù",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "[u",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "[A",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "À",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "À",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "[A",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "[E",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "È",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "È",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "[E",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "[I",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ì",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ì",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "[I",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "[O",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ò",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ò",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "[O",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "[U",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ù",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ù",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "[U",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "~",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ª",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ª",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "~",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "@",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "\"",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "@",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "#",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "·",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "·",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "#",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "^",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "&",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "&",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "^",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "&",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "/",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "/",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "&",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "*",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "(",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "(",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "*",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "(",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": ")",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": ")",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "(",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": ")",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "=",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "=",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": ")",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "_",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "?",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "?",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "_",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "+",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "¿",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "¿",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "+",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "{",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "^",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "^",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "{",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "}",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "*",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "*",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "}",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": ":",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ñ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ñ",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": ":",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "¨",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "¨",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\"",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "|",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ç",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ç",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "|",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "<",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": ";",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": ";",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "<",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": ">",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": ":",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": ":",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": ">",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "?",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "_",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "_",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "?",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"a",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ä",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ä",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\"a",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"e",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ë",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ë",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\"e",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"i",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ï",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ï",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\"i",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"o",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ö",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ö",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\"o",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"u",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ü",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ü",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\"u",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"A",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ä",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ä",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\"A",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"E",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ë",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ë",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\"E",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"I",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ï",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ï",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\"I",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"O",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ö",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ö",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\"O",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "\"U",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ü",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ü",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "\"U",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "{a",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "â",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "â",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "{a",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "{e",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ê",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ê",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "{e",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "{i",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "î",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "î",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "{i",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "{o",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ô",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "ô",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "{o",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "{u",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "û",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "û",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "{u",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "{A",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Â",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Â",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "{A",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "{E",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ê",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ê",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "{E",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "{I",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Î",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Î",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "{I",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "{O",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ô",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Ô",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "{O",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "{U",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Û",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Û",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "{U",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "hgsghl ugd;l",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "hgsghl ugdñl",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "hgsghl ugd;l",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "hgsghl ugdñl",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "hgsghl ugd;l",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "hgsghl ugd<l",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "lvpfh fpl",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "lvpfh fpl",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "lvpfh fpl",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "lvpfh fpl",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "lvpfh fpl",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "lvpfh fpl",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": ";dt phg;",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "ñdt phgñ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": ";dt phg;",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ñdt phgñ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": ";dt phg;",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "<dt phg<",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "hello world",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "hello world",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "hello world",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "hello world",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "hello world",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "hello world",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "ghbdtn",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "ghbdtn",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "ghbdtn",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "ghbdtn",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "ghbdtn",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "ghbdtn",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "the quick brown fox jumps over the lazy dog",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "the quick brown fox jumps over the lazy dog",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "the quick brown fox jumps over the lazy dog",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "the quick brown fox jumps over the lazy dog",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "the quick brown fox jumps over the lazy dog",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "the quick brown fox jumps over the lazy dog",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "Mixed CASE and 123 numbers!",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "Mixed CASE and 123 numbers!",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "Mixed CASE and 123 numbers!",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Mixed CASE and 123 numbers!",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "Mixed CASE and 123 numbers!",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "Mixed CASE and 123 numbers!",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "trailing spaces   ",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "trailing spaces   ",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "trailing spaces   ",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "trailing spaces   ",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "trailing spaces   ",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "trailing spaces   ",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "   leading spaces",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "   leading spaces",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "   leading spaces",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "   leading spaces",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "   leading spaces",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "   leading spaces",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "punctuation: ,./;'[]\\-=`",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "punctuationÑ ,.-ñ´`+ç'¡º",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "punctuation: ,./;'[]\\-=`",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "punctuationÑ ,.-ñ´`+ç'¡º",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "punctuation: ,./;'[]\\-=`",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "punctuation> ,.&<-[]\\/)[",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "shifted punctuation: <>?:\"{}|_+~",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "shifted punctuationÑ ;:_Ñ¨^*Ç?¿ª",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "shifted punctuation: <>?:\"{}|_+~",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "shifted punctuationÑ ;:_Ñ¨^*Ç?¿ª",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "shifted punctuation: <>?:\"{}|_+~",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "shifted punctuation> <>_>@{}|?]~",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "اثممخ صخقمي",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "اثممخ صخقمي",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "اثممخ صخقمي",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "اثممخ صخقمي",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "اثممخ صخقمي",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "اثممخ صخقمي",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "привет мир",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "привет мир",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "привет мир",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "привет мир",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "привет мир",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "привет мир",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "a",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "a",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "a",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "a",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "a",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "a",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "A",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "A",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "A",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "A",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "A",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "A",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "",
+      "changed": false,
+      "direction": null,
+      "layoutId": null
+    },
+    {
+      "input": "",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "",
+      "changed": false,
+      "direction": null,
+      "layoutId": null
+    },
+    {
+      "input": "",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "",
+      "changed": false,
+      "direction": null,
+      "layoutId": null
+    },
+    {
+      "input": "   ",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "   ",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "   ",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "   ",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "   ",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "   ",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "123456789",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "123456789",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "123456789",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "123456789",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "123456789",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "123456789",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "user@example.com",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "user\"example.com",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "user@example.com",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "user\"example.com",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "user@example.com",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "user@example.com",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "https://example.com/path?q=1",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "httpsÑ--example.com-path_q¡1",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "https://example.com/path?q=1",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "httpsÑ--example.com-path_q¡1",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "https://example.com/path?q=1",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "https>&&example.com&path_q)1",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "es"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "lpl,+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "lpl,+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "lpl,]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "Lpl,+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Lpl,+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "Lpl,]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "LPL,+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "LPL,+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "LPL,]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "Hpl+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Hpl+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "Hpl]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "HPL+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "HPL+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "HPL]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "Ok",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "Ok",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "Ok",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "OK",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "OK",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "OK",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "CASE",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "CASE",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "CASE",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "McDonald",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "McDonald",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "McDonald",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "hgslhxK rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "hgslhxK rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "hgslhxK rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "K",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "K",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "K",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "P",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "P",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "P",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "L",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "L",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "L",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "I",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "I",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "I",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "K rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "K rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "K rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "A4",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "A4",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "A4",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "L+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLayout",
+      "expected": "L+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "es"
+      ],
+      "mode": "toLatin",
+      "expected": "L]",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
+    },
+    {
       "input": "hgsghl ugd;l",
       "primaryLayout": "ar",
       "enabledLayouts": [
@@ -14205,7 +17145,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "السلام عليكم",
@@ -14221,7 +17162,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "السلام علیکم",
@@ -14237,7 +17179,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "рпыпрд гпвжд",
@@ -14253,7 +17196,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "יעדעיך ועגףך",
@@ -14269,13 +17213,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ηγσγηλ θγδ΄λ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "hgsghl ugd;l",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "hgsghl ugdñl",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
     },
     {
       "input": "lvpfh fpl",
@@ -14285,7 +17247,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "مرحبا بحم",
@@ -14301,7 +17264,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "مرحبا بحم",
@@ -14317,7 +17281,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "дмзар азд",
@@ -14333,7 +17298,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ךהפכי כפך",
@@ -14349,13 +17315,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "λωπφη φπλ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "lvpfh fpl",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "lvpfh fpl",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": ";dt phg;",
@@ -14365,7 +17349,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "كيف حالك",
@@ -14381,7 +17366,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "کیف حالک",
@@ -14397,7 +17383,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "жве зрпж",
@@ -14413,7 +17400,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ףגא פיעף",
@@ -14429,13 +17417,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "΄δτ πηγ΄",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": ";dt phg;",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "ñdt phgñ",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
     },
     {
       "input": "hello world",
@@ -14445,7 +17451,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "اثممخ صخقمي",
@@ -14461,7 +17468,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "اثممخ صخقمی",
@@ -14477,7 +17485,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "руддщ цщкдв",
@@ -14493,7 +17502,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "יקךךם 'םרךג",
@@ -14509,13 +17519,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ηελλο ςορλδ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "hello world",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "hello world",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "ghbdtn",
@@ -14525,7 +17553,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "لالايفى",
@@ -14541,7 +17570,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "لاذیفد",
@@ -14557,7 +17587,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "привет",
@@ -14573,7 +17604,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "עינגאמ",
@@ -14589,13 +17621,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "γηβδτν",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "ghbdtn",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "ghbdtn",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "the quick brown fox jumps over the lazy dog",
@@ -14605,7 +17655,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "فاث ضعهؤن لاقخصى بخء تعةحس خرثق فاث مشئغ يخل",
@@ -14621,7 +17672,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "فاث ضعهزن ذقخصد بخط تعپحس خرثق فاث مشظغ یخل",
@@ -14637,7 +17689,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "еру йгшсл икщцт ащч огьзы щмук еру дфян вщп",
@@ -14653,7 +17706,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "איק /וןבל נרם'מ כםס חוצפד םהקר איק ךשזט גםע",
@@ -14669,13 +17723,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "τηε ;θιψκ βροςν φοχ ξθμπσ οωερ τηε λαζυ δογ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "the quick brown fox jumps over the lazy dog",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "the quick brown fox jumps over the lazy dog",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "Mixed CASE and 123 numbers!",
@@ -14685,7 +17757,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ةهءثي ؤشسث شىي 123 ىعةلاثقس!",
@@ -14701,7 +17774,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ءهطثی ژؤئث شدی ۱۲۳ دعپذثقس!",
@@ -14717,7 +17791,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Ьшчув СФЫУ фтв 123 тгьиукы!",
@@ -14733,7 +17808,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "צןסקג בשדק שמג 123 מוצנקרד!",
@@ -14749,13 +17825,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Μιχεδ ΨΑΣΕ ανδ 123 νθμβερσ!",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "Mixed CASE and 123 numbers!",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "Mixed CASE and 123 numbers!",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "trailing spaces   ",
@@ -14765,7 +17859,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "فقشهمهىل سحشؤثس   ",
@@ -14781,7 +17876,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "فقشهمهدل سحشزثس   ",
@@ -14797,7 +17893,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "екфшдштп ызфсуы   ",
@@ -14813,7 +17910,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ארשןךןמע דפשבקד   ",
@@ -14829,13 +17927,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "τραιλινγ σπαψεσ   ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "trailing spaces   ",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "trailing spaces   ",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "   leading spaces",
@@ -14845,7 +17961,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "   مثشيهىل سحشؤثس",
@@ -14861,7 +17978,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "   مثشیهدل سحشزثس",
@@ -14877,7 +17995,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "   дуфвштп ызфсуы",
@@ -14893,7 +18012,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "   ךקשגןמע דפשבקד",
@@ -14909,13 +18029,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "   λεαδινγ σπαψεσ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "   leading spaces",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "   leading spaces",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "punctuation: ,./;'[]\\-=`",
@@ -14925,7 +18063,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "حعىؤفعشفهخى: وزظكطجد\\-=ذ",
@@ -14941,7 +18080,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "حعدزفعشفهخد: و./کگجچ\\-=‍",
@@ -14957,7 +18097,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "згтсегфешщтЖ бю.жэхъ\\-=ё",
@@ -14973,7 +18114,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "פומבאושאןםמ: תץ.ף,][\\-=`",
@@ -14989,13 +18131,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "πθνψτθατιον¨ ,./΄'[]\\-=`",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "punctuation: ,./;'[]\\-=`",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "punctuationÑ ,.-ñ´`+ç'¡º",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
     },
     {
       "input": "shifted punctuation: <>?:\"{}|_+~",
@@ -15005,7 +18165,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ساهبفثي حعىؤفعشفهخى: ,.؟:\"<>|_+ّ",
@@ -15021,7 +18182,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ساهبفثی حعدزفعشفهخد: ><؟:؛}{|_+~",
@@ -15037,7 +18199,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ыршаеув згтсегфешщтЖ БЮ,ЖЭХЪ|_+Ё",
@@ -15053,7 +18216,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "דיןכאקג פומבאושאןםמ: ><?:\"}{|_+~",
@@ -15069,7 +18233,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "σηιφτεδ πθνψτθατιον¨ <>?¨\"{}|_+~",
@@ -15078,6 +18243,23 @@
       "layoutId": "el"
     },
     {
+      "input": "shifted punctuation: <>?:\"{}|_+~",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "shifted punctuationÑ ;:_Ñ¨^*Ç?¿ª",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
+    },
+    {
       "input": "اثممخ صخقمي",
       "primaryLayout": "ar",
       "enabledLayouts": [
@@ -15085,7 +18267,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "hello world",
@@ -15101,7 +18284,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "hello world",
@@ -15117,7 +18301,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "hello world",
@@ -15133,7 +18318,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "hello world",
@@ -15149,7 +18335,25 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "hello world",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "ar"
+    },
+    {
+      "input": "اثممخ صخقمي",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "hello world",
@@ -15165,7 +18369,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ghbdtn vbh",
@@ -15181,7 +18386,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ghbdtn vbh",
@@ -15197,7 +18403,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ghbdtn vbh",
@@ -15213,7 +18420,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ghbdtn vbh",
@@ -15229,7 +18437,25 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "ghbdtn vbh",
+      "changed": true,
+      "direction": "toLatin",
+      "layoutId": "ru"
+    },
+    {
+      "input": "привет мир",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ghbdtn vbh",
@@ -15245,7 +18471,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ش",
@@ -15261,7 +18488,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ش",
@@ -15277,7 +18505,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ф",
@@ -15293,7 +18522,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ש",
@@ -15309,13 +18539,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "α",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "a",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "a",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "A",
@@ -15325,7 +18573,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ِ",
@@ -15341,7 +18590,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ؤ",
@@ -15357,7 +18607,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Ф",
@@ -15373,7 +18624,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ש",
@@ -15389,13 +18641,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Α",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "A",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "A",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "",
@@ -15405,7 +18675,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "",
@@ -15421,7 +18692,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "",
@@ -15437,7 +18709,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "",
@@ -15453,7 +18726,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "",
@@ -15469,7 +18743,25 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "",
+      "changed": false,
+      "direction": null,
+      "layoutId": null
+    },
+    {
+      "input": "",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "",
@@ -15485,7 +18777,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "   ",
@@ -15501,7 +18794,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "   ",
@@ -15517,7 +18811,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "   ",
@@ -15533,7 +18828,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "   ",
@@ -15549,13 +18845,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "   ",
       "changed": false,
       "direction": null,
       "layoutId": "el"
+    },
+    {
+      "input": "   ",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "   ",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "123456789",
@@ -15565,7 +18879,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "123456789",
@@ -15581,7 +18896,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "۱۲۳۴۵۶۷۸۹",
@@ -15597,7 +18913,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "123456789",
@@ -15613,7 +18930,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "123456789",
@@ -15629,13 +18947,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "123456789",
       "changed": false,
       "direction": null,
       "layoutId": "el"
+    },
+    {
+      "input": "123456789",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "123456789",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "user@example.com",
@@ -15645,7 +18981,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "عسثق@ثءشةحمثزؤخة",
@@ -15661,7 +18998,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "عسثق٬ثطشپحمث.زخپ",
@@ -15677,7 +19015,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "гыук\"учфьздуюсщь",
@@ -15693,7 +19032,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ודקר@קסשצפךקץבםצ",
@@ -15709,13 +19049,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "θσερ@εχαμπλε.ψομ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "user@example.com",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "user\"example.com",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
     },
     {
       "input": "https://example.com/path?q=1",
@@ -15725,7 +19083,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "اففحس:ظظثءشةحمثزؤخةظحشفا؟ض=1",
@@ -15741,7 +19100,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "اففحس://ثطشپحمث.زخپ/حشفا؟ض=۱",
@@ -15757,7 +19117,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "реезыЖ..учфьздуюсщь.зфер,й=1",
@@ -15773,7 +19134,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "יאאפד:..קסשצפךקץבםצ.פשאי?/=1",
@@ -15789,13 +19151,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ηττπσ¨//εχαμπλε.ψομ/πατη?;=1",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "https://example.com/path?q=1",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "httpsÑ--example.com-path_q¡1",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
     },
     {
       "input": "lpl,]",
@@ -15805,7 +19185,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "محمود",
@@ -15821,7 +19202,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "محموچ",
@@ -15837,7 +19219,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "дздбъ",
@@ -15853,7 +19236,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ךפךת[",
@@ -15869,13 +19253,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "λπλ,]",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "lpl,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "lpl,+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
     },
     {
       "input": "Lpl,]",
@@ -15885,7 +19287,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "محمود",
@@ -15901,7 +19304,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "محموچ",
@@ -15917,7 +19321,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Дздбъ",
@@ -15933,7 +19338,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ךפךת[",
@@ -15949,13 +19355,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Λπλ,]",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "Lpl,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "Lpl,+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
     },
     {
       "input": "LPL,]",
@@ -15965,7 +19389,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "محمود",
@@ -15981,7 +19406,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "محموچ",
@@ -15997,7 +19423,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ДЗДбъ",
@@ -16013,7 +19440,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ךפךת[",
@@ -16029,13 +19457,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ΛΠΛ,]",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "LPL,]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "LPL,+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
     },
     {
       "input": "Hpl]",
@@ -16045,7 +19491,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "أحمد",
@@ -16061,7 +19508,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "آحمچ",
@@ -16077,7 +19525,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Рздъ",
@@ -16093,7 +19542,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "יפך[",
@@ -16109,13 +19559,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Ηπλ]",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "Hpl]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "Hpl+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
     },
     {
       "input": "HPL]",
@@ -16125,7 +19593,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "أحمد",
@@ -16141,7 +19610,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "آحمچ",
@@ -16157,7 +19627,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "РЗДъ",
@@ -16173,7 +19644,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "יפך[",
@@ -16189,13 +19661,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ΗΠΛ]",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "HPL]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "HPL+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
     },
     {
       "input": "Ok",
@@ -16205,7 +19695,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "خن",
@@ -16221,7 +19712,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "خن",
@@ -16237,7 +19729,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Щл",
@@ -16253,7 +19746,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "םל",
@@ -16269,13 +19763,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Οκ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "Ok",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "Ok",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "OK",
@@ -16285,7 +19797,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "خن",
@@ -16301,7 +19814,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "خن",
@@ -16317,7 +19831,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ЩЛ",
@@ -16333,7 +19848,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "םל",
@@ -16349,13 +19865,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ΟΚ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "OK",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "OK",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "CASE",
@@ -16365,7 +19899,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ؤشسث",
@@ -16381,7 +19916,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ژؤئث",
@@ -16397,7 +19933,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "СФЫУ",
@@ -16413,7 +19950,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "בשדק",
@@ -16429,13 +19967,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ΨΑΣΕ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "CASE",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "CASE",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "McDonald",
@@ -16445,7 +20001,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ةؤيخىشمي",
@@ -16461,7 +20018,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ءزيخدشمی",
@@ -16477,7 +20035,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ЬсВщтфдв",
@@ -16493,7 +20052,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "צבגםמשךג",
@@ -16509,13 +20069,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ΜψΔοναλδ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "McDonald",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "McDonald",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "hgslhxK rvdfh",
@@ -16525,7 +20103,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "السماء، قريبا",
@@ -16541,7 +20120,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "السماط» قریبا",
@@ -16557,7 +20137,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "рпыдрчЛ кмвар",
@@ -16573,7 +20154,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "יעדךיסל רהגכי",
@@ -16589,13 +20171,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ηγσληχΚ ρωδφη",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "hgslhxK rvdfh",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "hgslhxK rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "K",
@@ -16605,7 +20205,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "،",
@@ -16621,7 +20222,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "»",
@@ -16637,7 +20239,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Л",
@@ -16653,7 +20256,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ל",
@@ -16669,13 +20273,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Κ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "K",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "K",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "P",
@@ -16685,7 +20307,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "؛",
@@ -16701,7 +20324,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "[",
@@ -16717,7 +20341,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "З",
@@ -16733,7 +20358,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "פ",
@@ -16749,13 +20375,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Π",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "P",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "P",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "L",
@@ -16765,7 +20409,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "/",
@@ -16781,7 +20426,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "«",
@@ -16797,7 +20443,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Д",
@@ -16813,7 +20460,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ך",
@@ -16829,13 +20477,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Λ",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "L",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "L",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "I",
@@ -16845,7 +20511,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "÷",
@@ -16861,7 +20528,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ّ",
@@ -16877,7 +20545,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Ш",
@@ -16893,7 +20562,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ן",
@@ -16909,13 +20579,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Ι",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "I",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "I",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "K rvdfh",
@@ -16925,7 +20613,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "، قريبا",
@@ -16941,7 +20630,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "» قریبا",
@@ -16957,7 +20647,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Л кмвар",
@@ -16973,7 +20664,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ל רהגכי",
@@ -16989,13 +20681,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Κ ρωδφη",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "K rvdfh",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "K rvdfh",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "A4",
@@ -17005,7 +20715,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ِ4",
@@ -17021,7 +20732,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ؤ۴",
@@ -17037,7 +20749,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Ф4",
@@ -17053,7 +20766,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ש4",
@@ -17069,13 +20783,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Α4",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "A4",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "A4",
+      "changed": false,
+      "direction": null,
+      "layoutId": "es"
     },
     {
       "input": "L]",
@@ -17085,7 +20817,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "/د",
@@ -17101,7 +20834,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "«چ",
@@ -17117,7 +20851,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Дъ",
@@ -17133,7 +20868,8 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "ך[",
@@ -17149,13 +20885,31 @@
         "fa",
         "ru",
         "he",
-        "el"
+        "el",
+        "es"
       ],
       "mode": "auto",
       "expected": "Λ]",
       "changed": true,
       "direction": "toLayout",
       "layoutId": "el"
+    },
+    {
+      "input": "L]",
+      "primaryLayout": "es",
+      "enabledLayouts": [
+        "ar",
+        "fa",
+        "ru",
+        "he",
+        "el",
+        "es"
+      ],
+      "mode": "auto",
+      "expected": "L+",
+      "changed": true,
+      "direction": "toLayout",
+      "layoutId": "es"
     }
   ]
 }

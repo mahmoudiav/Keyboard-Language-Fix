@@ -189,6 +189,25 @@
   }
 
   /**
+   * Whether `text` is already in `layout`'s script, and so wants converting
+   * back to Latin rather than into the layout.
+   *
+   * For a different alphabet this is a weighing: a stray Arabic letter in an
+   * English sentence should not drag the whole selection the wrong way.
+   *
+   * A layout that writes Latin itself cannot be weighed that way — Spanish is
+   * mostly a-z too, so its letters count for both sides at once. There the
+   * question is settled by the one thing a US keyboard cannot do: if the text
+   * holds an "ñ" or an "á", it has already been through the layout, because
+   * there is no way to type those without it.
+   */
+  function looksAlreadyConverted(text, layout) {
+    if (layout.sameScript) return true; // detectLayout only matched at all because such a character is present
+    const s = score(text, layout);
+    return s.target >= s.latin;
+  }
+
+  /**
    * Pick the layout a piece of non-Latin text was most likely typed in.
    * Returns null when the text carries no recognisable script.
    */
@@ -243,8 +262,7 @@
       layout = detectLayout(text, enabled) || primary;
     } else {
       const detected = detectLayout(text, enabled);
-      const s = score(text, detected || primary);
-      if (detected && s.target >= s.latin) {
+      if (detected && looksAlreadyConverted(text, detected)) {
         direction = 'toLatin';
         layout = detected;
       } else {

@@ -100,8 +100,7 @@ public static class Converter
 
             default:
                 var detected = DetectLayout(text, enabled);
-                var (latin, target) = Score(text, detected ?? primary);
-                if (detected is not null && target >= latin)
+                if (detected is not null && LooksAlreadyConverted(text, detected))
                 {
                     direction = ConversionDirection.ToLatin;
                     layout = detected;
@@ -155,6 +154,29 @@ public static class Converter
         }
 
         return best;
+    }
+
+    /// <summary>
+    /// Whether <paramref name="text"/> is already in this layout's script, and
+    /// so wants converting back to Latin rather than into the layout.
+    /// </summary>
+    /// <remarks>
+    /// For a different alphabet this is a weighing: a stray Arabic letter in an
+    /// English sentence should not drag the whole selection the wrong way.
+    ///
+    /// A layout that writes Latin itself cannot be weighed that way — Spanish is
+    /// mostly a-z too, so its letters count for both sides at once. There the
+    /// question is settled by the one thing a US keyboard cannot do: if the text
+    /// holds an "ñ" or an "á", it has already been through the layout, because
+    /// there is no way to type those without it.
+    /// </remarks>
+    private static bool LooksAlreadyConverted(string text, Layout layout)
+    {
+        // DetectLayout only matched at all because such a character is present.
+        if (layout.SameScript) return true;
+
+        var (latin, target) = Score(text, layout);
+        return target >= latin;
     }
 
     /// <summary>Counts Latin letters against the layout's own script; everything else is ignored.</summary>
