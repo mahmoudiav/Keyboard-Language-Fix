@@ -8,12 +8,36 @@
 
 ---
 
+## New in 1.1.0
+
+**Spanish (Spain).** The first layout that shares the alphabet with English, so
+only the punctuation and the accents move — `Espa;a` becomes `España`, `est'a`
+becomes `está`, and going the other way `console.log)x=ñ` becomes
+`console.log(x);`. The accents are dead keys on a real Spanish keyboard, and
+they are treated as such here: `'` and then a vowel is one letter, not two.
+
+**A right-click entry in Windows.** Right-click a text file in File Explorer and
+choose **Fix keyboard language** to convert the whole file — no selecting. It
+opens showing the text before and after, and writes nothing until you press
+Save, keeping what you had beside it as `.bak`. Windows 11 puts it under **Show
+more options**; Settings can turn it off.
+
+<div dir="rtl">
+
+**الإسبانية**، وهي أول تخطيط يشارك الإنجليزية أبجديتها، فلا يتغيّر إلا الترقيم
+والحركات. و**أمر في قائمة الزر الأيمن** لتحويل ملف نصي كاملاً من مستكشف الملفات،
+مع عرض النتيجة قبل الحفظ. في ويندوز 11 تجده تحت «إظهار المزيد من الخيارات».
+
+</div>
+
+---
+
 ## Download
 
 | File | For |
 | --- | --- |
-| **`KeyboardLanguageFix-1.0.0-x64-Setup.exe`** | Almost every PC — start here |
-| `KeyboardLanguageFix-1.0.0-arm64-Setup.exe` | Windows on ARM only (Surface Pro X, Snapdragon laptops) |
+| **`KeyboardLanguageFix-1.1.0-x64-Setup.exe`** | Almost every PC — start here |
+| `KeyboardLanguageFix-1.1.0-arm64-Setup.exe` | Windows on ARM only (Surface Pro X, Snapdragon laptops) |
 
 Download the file, double-click it, click **Install**. It installs for your user account only, so **no administrator rights are needed**.
 
@@ -38,9 +62,20 @@ It works in both directions and decides which way round from the text itself —
 
 ## Keyboard layouts
 
-Arabic (101) · Persian · Russian (ЙЦУКЕН) · Hebrew · Greek
+Arabic (101) · Persian · Russian (ЙЦУКЕН) · Hebrew · Greek · Spanish (Spain)
 
 Not quite your layout? Settings lets you override individual keys.
+
+## A whole file at once
+
+Right-click a text file in File Explorer → **Fix keyboard language** (Windows 11:
+under **Show more options**). The file opens with its text before and after;
+nothing is written until you press Save, and the version you had is kept beside
+it with `.bak` on the end. Plain text saved as UTF-8 or UTF-16 — an older
+Windows code page is refused rather than guessed at.
+
+Selected text inside a program is what the shortcut is for. Windows gives no
+program a way to add a command to another program's text menu.
 
 ## Requirements
 
@@ -61,6 +96,7 @@ The app registers a **single keyboard shortcut** with Windows. It is not able to
 - Does not work in windows running as administrator, such as Task Manager. Windows does not permit it, and the app never asks for elevation.
 - Cannot read a selection from the few programs that ignore <kbd>Ctrl</kbd> + <kbd>C</kbd>.
 - Only text is restored to your clipboard afterwards — a picture or files are not. Switch to *Type it out* in Settings to leave the clipboard untouched.
+- Spanish shares its letters with English, so a selection that is already correct English is left alone rather than guessed at. Pick a direction in Settings to force it either way.
 - Word capitalises the first letter of a sentence as you type. Most of that is corrected automatically, but six Arabic letters stay ambiguous (`Hgsghl` gives `ألسلام`, not `السلام`). Turn it off at the source: **File → Options → Proofing → AutoCorrect Options → uncheck "Capitalize first letter of sentences"**.
 
 ## Removing it

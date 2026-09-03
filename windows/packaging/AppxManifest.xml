@@ -21,7 +21,7 @@
   <Identity
     Name="PUBLISHER.KeyboardLanguageFix"
     Publisher="CN=REPLACE-WITH-YOUR-PARTNER-CENTER-PUBLISHER-ID"
-    Version="1.0.0.0"
+    Version="1.1.0.0"
     ProcessorArchitecture="x64" />
 
   <Properties>

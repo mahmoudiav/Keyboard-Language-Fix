@@ -31,6 +31,17 @@ public partial class App : Application
     {
         base.OnStartup(e);
 
+        // The Windows right-click entry starts a separate, short-lived copy for
+        // one file. It gets no tray icon and no hotkey, and it is handled before
+        // the single-instance check on purpose: it is not competing with a
+        // running copy for the shortcut, so it must not be turned away by it.
+        var fileToConvert = FileArgument(e.Args);
+        if (fileToConvert is not null)
+        {
+            ShowFileWindow(fileToConvert);
+            return;
+        }
+
         _instanceMutex = new Mutex(initiallyOwned: true, SingleInstanceMutex, out var isFirstInstance);
         if (!isFirstInstance)
         {
@@ -58,6 +69,7 @@ public partial class App : Application
         _tray.ExitRequested += (_, _) => Shutdown();
 
         ApplyHotkey(announceFailure: true);
+        SyncContextMenu();
         _tray.Show(DescribeHotkey());
 
         // First run has nothing configured yet, so show the window once.
@@ -65,6 +77,51 @@ public partial class App : Application
         {
             _store.Save(_settings);
             ShowSettings();
+        }
+    }
+
+    /// <summary>The file Explorer asked us to convert, or null for a normal start.</summary>
+    private static string? FileArgument(IReadOnlyList<string> args)
+    {
+        for (var index = 0; index < args.Count - 1; index++)
+        {
+            if (string.Equals(args[index], ShellMenu.ConvertFileSwitch, StringComparison.OrdinalIgnoreCase))
+            {
+                return args[index + 1];
+            }
+        }
+        return null;
+    }
+
+    /// <summary>Opens one file in its own window and quits when it is closed.</summary>
+    private void ShowFileWindow(string path)
+    {
+        var window = new FileConvertWindow(path, new SettingsStore().Load());
+        // ShutdownMode is OnExplicitShutdown, which is what keeps the windowless
+        // tray app alive; this run has nothing to stay alive for.
+        window.Closed += (_, _) => Shutdown();
+        window.Show();
+    }
+
+    /// <summary>
+    /// Brings the right-click menu entry into line with the setting.
+    /// </summary>
+    /// <remarks>
+    /// Done at every start rather than only when the setting changes, because
+    /// the entry records the path of the exe: after an update that moved it, the
+    /// stale entry has to be rewritten or Explorer would launch nothing.
+    /// </remarks>
+    private void SyncContextMenu()
+    {
+        if (!ShellMenu.IsSupported) return;
+
+        if (_settings.ShowInContextMenu)
+        {
+            if (!ShellMenu.IsRegistered()) ShellMenu.TrySetEnabled(true);
+        }
+        else if (ShellMenu.IsPresent())
+        {
+            ShellMenu.TrySetEnabled(false);
         }
     }
 

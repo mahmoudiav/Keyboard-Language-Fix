@@ -10,7 +10,7 @@ the tray icon for settings.
 
 ## About
 
-    Keyboard Language Fix 1.0.0
+    Keyboard Language Fix 1.1.0
     Idea and implementation: Mahmoud SATALEH
     mahmoudiav@icloud.com
     Free software — free to use and free to share. MIT License.
@@ -59,8 +59,8 @@ contact address and licence made it in.
 Tag a version and the release workflow does the rest:
 
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
+git tag v1.1.0
+git push origin v1.1.0
 ```
 
 It builds both architectures, verifies them, and attaches them to a GitHub
@@ -135,8 +135,30 @@ So the app does what every tool of this kind does, in one motion you never see:
 5. Puts your clipboard back.
 
 The conversion tables are **generated from the browser extension's**
-`src/core/layouts.js`, and 1028 recorded cases are replayed against the C#
+`src/core/layouts.js`, and 1,650 recorded cases are replayed against the C#
 engine in the test suite, so the two platforms cannot drift apart.
+
+### The right-click entry
+
+Explorer's menu is driven by one key under `HKEY_CURRENT_USER\Software\Classes`
+naming the command to run, with `%1` standing for the file that was clicked —
+see `ShellMenu.cs`. Nothing is installed and no COM object is registered, which
+is also why it appears under "Show more options" on Windows 11: the modern menu
+takes `IExplorerCommand` implementations from packaged apps only.
+
+Explorer starts a second, short-lived copy of the app with `--convert-file`.
+That copy skips the single-instance check on purpose — it is not competing with
+the running one for the hotkey — reads the file through `TextFileCodec`, and
+shows `FileConvertWindow`. Nothing is written until the user presses Save.
+
+`TextFileCodec` reads the Unicode encodings and **refuses** everything else. A
+legacy code page cannot be told from another by looking, and a wrong guess would
+destroy the document it was asked to fix, so the answer is a message rather than
+an attempt.
+
+There is deliberately no entry on selected text. Windows has no mechanism for
+one: every program builds its own text context menu and none of them consult the
+registry.
 
 ### Why there is no keyboard hook
 
@@ -159,6 +181,13 @@ for Store certification.
   method to "Type it out" to leave the clipboard alone entirely.
 - **Slow apps.** Remote desktops and some Electron apps answer the copy late.
   Raise the timeout in Settings if conversions come back empty.
+- **Spanish in Automatic mode.** Every other layout announces itself by writing
+  a different alphabet. Spanish does not, so the direction turns on a character
+  a US keyboard cannot produce — an `ñ` or an accent. Text that has neither is
+  taken to be waiting to become Spanish, which is right for `Espa;a` and does
+  nothing at all to plain English, since the letters are identical either way.
+  A mixed selection is genuinely ambiguous; that is what the Direction setting
+  is for.
 - **Word's auto-capitalisation.** Word capitalises the first letter of a
   sentence as you type, which changes what you actually typed before the app
   ever sees it. Most of that is undone automatically — a capital that would
@@ -212,7 +241,7 @@ cd windows\build
 .\build-msix.ps1 -Identity "12345Contoso.KeyboardLanguageFix" `
                  -Publisher "CN=ABCD1234-1234-1234-1234-1234567890AB" `
                  -PublisherDisplayName "Contoso Ltd" `
-                 -Version "1.0.0.0" `
+                 -Version "1.1.0.0" `
                  -Architectures both
 ```
 
@@ -267,15 +296,18 @@ windows/
     Layouts.g.cs                    GENERATED from src/core/layouts.js
     Converter.cs                    mirrors src/core/converter.js
     AppSettings.cs                  settings model, JSON, self-repairing
+    TextFileCodec.cs                encoding detection for the file converter
   src/KeyboardLanguageFix.App/      WPF tray app
     Interop/NativeMethods.cs        the Win32 surface, and nothing more
     Interop/InputSimulator.cs       synthetic keystrokes
     Interop/HotkeyListener.cs       RegisterHotKey on a message-only window
     TextSwapper.cs                  the copy-convert-replace cycle
+    ShellMenu.cs                    the Explorer right-click entry
+    FileConvertWindow.xaml          what that entry opens: preview, then save
     SettingsWindow.xaml             settings UI with a live preview
   tests/KeyboardLanguageFix.Core.Tests/
     ParityTests.cs                  replays the JavaScript engine's output
-    parity-fixture.json             GENERATED — 1028 recorded cases
+    parity-fixture.json             GENERATED — 1,650 recorded cases
   packaging/AppxManifest.xml        MSIX manifest
   packaging/Images/                 Store logos, generated
   build/build-exe.ps1               builds a plain KeyboardLanguageFix.exe

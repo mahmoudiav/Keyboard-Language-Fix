@@ -1,0 +1,74 @@
+<Window x:Class="KeyboardLanguageFix.App.FileConvertWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Fix keyboard language"
+        Width="640" Height="640"
+        MinWidth="480" MinHeight="420"
+        WindowStartupLocation="CenterScreen"
+        Background="White"
+        FontFamily="Segoe UI"
+        FontSize="13">
+
+    <DockPanel Margin="16">
+
+        <Border DockPanel.Dock="Bottom" BorderThickness="0,1,0,0"
+                BorderBrush="{StaticResource Border}" Padding="0,12,0,0" Margin="0,12,0,0">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="SaveButton" Content="Save" Click="OnSave"
+                            Background="{StaticResource Accent}" Foreground="White"
+                            BorderBrush="{StaticResource Accent}" />
+                    <Button x:Name="CopyButton" Content="Copy" Click="OnCopy" Margin="8,0,0,0" />
+                    <Button Content="Close" Click="OnClose" Margin="8,0,0,0" />
+                    <TextBlock x:Name="StatusText" VerticalAlignment="Center" Margin="12,0,0,0"
+                               Foreground="#167A4A" FontWeight="SemiBold" />
+                </StackPanel>
+                <TextBlock x:Name="SaveHint" Style="{StaticResource Hint}"
+                           Text="Save rewrites the file. The version you have now is kept beside it, with .bak on the end." />
+            </StackPanel>
+        </Border>
+
+        <Border DockPanel.Dock="Top" Style="{StaticResource Card}">
+            <StackPanel>
+                <TextBlock x:Name="FileNameText" Style="{StaticResource Heading}" />
+                <TextBlock x:Name="FilePathText" Style="{StaticResource Hint}" TextWrapping="Wrap" />
+                <TextBlock x:Name="ProblemText" Style="{StaticResource Hint}" TextWrapping="Wrap"
+                           Foreground="#B4531A" FontWeight="SemiBold" Visibility="Collapsed" />
+            </StackPanel>
+        </Border>
+
+        <Border DockPanel.Dock="Top" Style="{StaticResource Card}">
+            <StackPanel>
+                <TextBlock Text="My second keyboard layout" Style="{StaticResource FieldLabel}" />
+                <ComboBox x:Name="LayoutBox" SelectionChanged="OnChoiceChanged" />
+
+                <TextBlock Text="Direction" Style="{StaticResource FieldLabel}" Margin="0,12,0,4" />
+                <ComboBox x:Name="ModeBox" SelectionChanged="OnChoiceChanged">
+                    <ComboBoxItem Content="Automatic (detect from the text)" />
+                    <ComboBoxItem Content="Always English → my layout" />
+                    <ComboBoxItem Content="Always my layout → English" />
+                </ComboBox>
+            </StackPanel>
+        </Border>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="Now" Style="{StaticResource FieldLabel}" />
+            <TextBox Grid.Row="1" x:Name="OriginalText" Padding="8,6" TextWrapping="Wrap"
+                     AcceptsReturn="True" IsReadOnly="True"
+                     VerticalScrollBarVisibility="Auto"
+                     Background="{StaticResource Surface}" />
+
+            <TextBlock Grid.Row="2" Text="After" Style="{StaticResource FieldLabel}" Margin="0,12,0,4" />
+            <TextBox Grid.Row="3" x:Name="ConvertedText" Padding="8,6" TextWrapping="Wrap"
+                     AcceptsReturn="True" VerticalScrollBarVisibility="Auto" />
+        </Grid>
+
+    </DockPanel>
+</Window>

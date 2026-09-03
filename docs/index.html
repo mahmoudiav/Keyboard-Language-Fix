@@ -6,7 +6,7 @@
 
 <title>Keyboard Language Fix — Convert text typed in the wrong keyboard layout | تصحيح لغة الكيبورد</title>
 
-<meta name="description" content="Typed Arabic but the keyboard was in English? Select the text, press one shortcut, and it is re-typed in the language you meant. Free Windows app and browser extension. Arabic, Persian, Russian, Hebrew, Greek. كتبت بلغة الكيبورد الخطأ؟ حدّد النص واضغط اختصاراً واحداً.">
+<meta name="description" content="Typed Arabic but the keyboard was in English? Select the text, press one shortcut, and it is re-typed in the language you meant. Free Windows app and browser extension. Arabic, Persian, Russian, Hebrew, Greek, Spanish. كتبت بلغة الكيبورد الخطأ؟ حدّد النص واضغط اختصاراً واحداً.">
 <meta name="author" content="Mahmoud SATALEH">
 <meta name="keywords" content="keyboard layout converter, wrong keyboard layout, fix keyboard language, arabic english converter, تصحيح لغة الكيبورد, تحويل النص من انجليزي الى عربي, punto switcher arabic, transliteration, windows utility">
 <link rel="canonical" href="https://mahmoudiav.github.io/Keyboard-Language-Fix/">
@@ -45,8 +45,8 @@
   "applicationCategory": "UtilitiesApplication",
   "applicationSubCategory": "Text utility",
   "operatingSystem": "Windows 10, Windows 11",
-  "softwareVersion": "1.0.0",
-  "description": "Re-types text that was typed on the wrong keyboard layout. Select the text, press one shortcut, and it becomes the language you meant. Supports Arabic, Persian, Russian, Hebrew and Greek.",
+  "softwareVersion": "1.1.0",
+  "description": "Re-types text that was typed on the wrong keyboard layout. Select the text, press one shortcut, and it becomes the language you meant. Supports Arabic, Persian, Russian, Hebrew, Greek and Spanish.",
   "url": "https://mahmoudiav.github.io/Keyboard-Language-Fix/",
   "downloadUrl": "https://github.com/mahmoudiav/Keyboard-Language-Fix/releases/latest",
   "installUrl": "https://github.com/mahmoudiav/Keyboard-Language-Fix/releases/latest",
@@ -69,7 +69,8 @@
     "Convert selected text between keyboard layouts with one shortcut",
     "Works in every Windows application",
     "Browser extension for Chrome, Edge, Brave and Firefox",
-    "Arabic, Persian, Russian, Hebrew and Greek layouts",
+    "Arabic, Persian, Russian, Hebrew, Greek and Spanish layouts",
+    "Right-click a text file in Windows to convert the whole file",
     "Works entirely offline, no data leaves the device"
   ]
 }
@@ -109,7 +110,7 @@
       "name": "Which keyboard layouts are supported?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Arabic (101), Persian, Russian (ЙЦУКЕН), Hebrew and Greek, in both directions against US QWERTY. Individual keys can be remapped in Settings for non-standard layouts."
+        "text": "Arabic (101), Persian, Russian (ЙЦУКЕН), Hebrew, Greek and Spanish (Spain), in both directions against US QWERTY. The Spanish layout composes the dead-key accents, so á and ñ come out right. Individual keys can be remapped in Settings for non-standard layouts."
       }
     },
     {
@@ -118,6 +119,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "SmartScreen shows that for any file it has not seen downloaded many times yet. It is a statement about how common the file is, not about its contents; Windows Defender found nothing in it. Click More info, then Run anyway. The source is public, the installer is built by GitHub from that source with a public build log, and every release publishes SHA-256 checksums and a signed provenance record you can verify."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I fix a whole file without selecting it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Right-click the file in Windows File Explorer and choose Fix keyboard language. The file opens with its text before and after the conversion, and nothing is written until you press Save; the version you had is kept beside it with .bak on the end. On Windows 11 the entry is under Show more options. It works on plain text files saved as UTF-8 or UTF-16."
       }
     },
     {
@@ -330,9 +339,34 @@ footer p { margin: 6px 0; }
 <section>
   <h2>Keyboard layouts</h2>
   <p>
-    Arabic (101) · Persian (Farsi) · Russian (ЙЦУКЕН) · Hebrew · Greek —
+    Arabic (101) · Persian (Farsi) · Russian (ЙЦУКЕН) · Hebrew · Greek · Spanish (Spain) —
     each in both directions against US QWERTY. Using a layout that differs
     slightly? Individual keys can be remapped in Settings.
+  </p>
+  <p>
+    Spanish is the one that also fixes accents. Its letters sit where English
+    keeps them, so what goes wrong is the punctuation: <code>Espa;a</code> for
+    <code>España</code>, <code>est'a</code> for <code>está</code>. Both come
+    back right, and so does the other direction — <code>console.log)x=ñ</code>
+    becomes <code>console.log(x);</code>.
+  </p>
+</section>
+
+<section id="right-click">
+  <h2>In the right-click menu</h2>
+  <p>
+    A whole file typed in the wrong language does not need selecting. Right-click
+    it in File Explorer and choose <strong>Fix keyboard language</strong>: the
+    file opens with its text before and after, and nothing is written until you
+    press Save. The version you had is kept beside it, with <code>.bak</code> on
+    the end.
+  </p>
+  <p class="note">
+    On Windows 11 the entry is under <strong>Show more options</strong>, where
+    Windows puts every entry that is not from a Store app. It can be turned off
+    in Settings. Selected text inside a program stays the shortcut's job:
+    Windows gives no program a way to add a command to another program's text
+    menu.
   </p>
 </section>
 
@@ -381,7 +415,8 @@ footer p { margin: 6px 0; }
   <ul class="plain">
     <li><strong>مجاني بالكامل</strong> — بلا إعلانات ولا حساب ولا نسخة مدفوعة.</li>
     <li><strong>يعمل في الاتجاهين</strong> ويستنتج الاتجاه المطلوب من النص نفسه.</li>
-    <li><strong>خمسة تخطيطات</strong>: العربية، والفارسية، والروسية، والعبرية، واليونانية.</li>
+    <li><strong>ستة تخطيطات</strong>: العربية، والفارسية، والروسية، والعبرية، واليونانية، والإسبانية.</li>
+    <li><strong>في قائمة الزر الأيمن</strong>: انقر بالزر الأيمن على ملف نصي واختر «Fix keyboard language» لتحويل الملف كاملاً، مع عرض النتيجة قبل الحفظ.</li>
     <li><strong>لا يُرسل شيئاً</strong> — كل شيء يجري داخل جهازك، بلا اتصال بالإنترنت.</li>
     <li><strong>لا يحتاج صلاحيات مدير</strong> — يُثبَّت في حساب المستخدم وحده.</li>
     <li><kbd>Ctrl</kbd> + <kbd>Z</kbd> يتراجع عن التحويل كأي تعديل عادي.</li>
@@ -463,10 +498,20 @@ footer p { margin: 6px 0; }
 
   <details>
     <summary>Which layouts are supported?</summary>
-    <p>Arabic (101), Persian, Russian (ЙЦУКЕН), Hebrew and Greek, in both
-    directions against US QWERTY. Individual keys can be remapped in Settings if
-    your layout differs, and new layouts are easy to add — write to the address
-    below.</p>
+    <p>Arabic (101), Persian, Russian (ЙЦУКЕН), Hebrew, Greek and Spanish
+    (Spain), in both directions against US QWERTY. Individual keys can be
+    remapped in Settings if your layout differs, and new layouts are easy to add
+    — write to the address below.</p>
+  </details>
+
+  <details>
+    <summary>Can I fix a whole file without selecting it?</summary>
+    <p>Yes. Right-click the file in File Explorer and choose <strong>Fix keyboard
+    language</strong> — on Windows 11, under &ldquo;Show more options&rdquo;. The
+    file opens with its text before and after, and nothing is written until you
+    press Save; what you had is kept beside it with <code>.bak</code> on the end.
+    Plain text files saved as UTF-8 or UTF-16 only, which is what Notepad and
+    every editor on a current Windows write.</p>
   </details>
 
   <details>

@@ -31,7 +31,29 @@ Ctrl+Z undoes the change like any other edit.
 Double-click the tray icon to open Settings, where you can change the shortcut,
 choose your second keyboard layout, and turn "start with Windows" on or off.
 
-Built-in layouts: Arabic, Persian, Russian, Hebrew, Greek.
+Built-in layouts: Arabic, Persian, Russian, Hebrew, Greek, Spanish (Spain).
+
+Spanish is the one that also fixes accents. Its letters sit exactly where
+English keeps them, so what comes out wrong is only the punctuation: a
+semicolon where you wanted n-with-tilde, and an apostrophe followed by a vowel
+where you wanted an accented one. Both are put right, and so is the other way
+round.
+
+
+A WHOLE FILE AT ONCE
+--------------------
+
+Right-click a text file in File Explorer and choose "Fix keyboard language".
+The file opens with its text before and after the conversion, and nothing is
+written until you press Save - the version you had is kept beside it, with .bak
+on the end.
+
+On Windows 11 the entry is under "Show more options", where Windows puts every
+entry that does not come from a Store app. It can be turned off in Settings.
+
+Selected text inside a program is what the shortcut is for. No program can add
+a command to the menu another program shows on selected text; Windows has no
+mechanism for it.
 
 
 WHAT IT DOES NOT DO
@@ -46,6 +68,12 @@ WHAT IT DOES NOT DO
     those are not restored afterwards. Only text is. You can switch to
     "Type it out" in Settings to leave the clipboard untouched entirely.
 
+  * The right-click entry opens plain text files saved as UTF-8 or UTF-16,
+    which is what Notepad and every editor on a current Windows write. A file
+    in an older Windows code page is refused rather than guessed at, because a
+    wrong guess would destroy the file it was asked to fix. Open such a file in
+    Notepad, save it again as UTF-8, and it will work.
+
 
 PRIVACY
 -------
@@ -56,6 +84,10 @@ account, and no telemetry of any kind. Your settings are a single small file in
 
 The app uses one registered keyboard shortcut. It is not able to see anything
 else you type, by design.
+
+The right-click entry is one registry key under HKEY_CURRENT_USER, naming the
+command Explorer should run. It is written to your own account only, and the
+uninstaller removes it.
 
 
 REMOVING IT

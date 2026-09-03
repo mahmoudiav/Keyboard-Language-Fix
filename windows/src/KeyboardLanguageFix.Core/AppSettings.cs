@@ -73,6 +73,13 @@ public sealed class AppSettings
     /// <summary>Whether the app should start with Windows.</summary>
     public bool RunAtStartup { get; set; }
 
+    /// <summary>
+    /// Whether "Fix keyboard language" appears in the Windows right-click menu
+    /// for text files. On by default: it costs one registry key and is the only
+    /// way to reach the converter without the keyboard.
+    /// </summary>
+    public bool ShowInContextMenu { get; set; } = true;
+
     /// <summary>Per-layout key overrides, keyed by layout id.</summary>
     public Dictionary<string, Dictionary<string, string>> CustomMap { get; set; } = new();
 

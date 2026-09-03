@@ -36,6 +36,10 @@
 !define APP_REGKEY     "Software\Microsoft\Windows\CurrentVersion\Uninstall\KeyboardLanguageFix"
 !define APP_RUNKEY     "Software\Microsoft\Windows\CurrentVersion\Run"
 !define APP_RUNVALUE   "KeyboardLanguageFix"
+; Where the app puts its "Fix keyboard language" right-click entry. Kept here
+; so the uninstaller can take it away again; see windows/src/.../ShellMenu.cs.
+!define APP_SHELLKEY   "Software\Classes\SystemFileAssociations"
+!define APP_SHELLVERB  "KeyboardLanguageFix"
 
 Name "${APP_NAME}"
 OutFile "${OUTPUT_FILE}"
@@ -162,6 +166,16 @@ Section "Uninstall"
   DeleteRegValue HKCU "${APP_RUNKEY}" "${APP_RUNVALUE}"
   DeleteRegKey HKCU "${APP_REGKEY}"
   DeleteRegKey HKCU "Software\KeyboardLanguageFix"
+
+  ; The right-click entry the app registers for itself on first run. The app
+  ; would normally take it away again, but by now it is gone, so the uninstaller
+  ; does it. HKCU only: this is the user's own copy of the association and
+  ; nobody else's.
+  DeleteRegKey HKCU "${APP_SHELLKEY}\text\shell\${APP_SHELLVERB}"
+  DeleteRegKey HKCU "${APP_SHELLKEY}\.md\shell\${APP_SHELLVERB}"
+  DeleteRegKey HKCU "${APP_SHELLKEY}\.csv\shell\${APP_SHELLVERB}"
+  DeleteRegKey HKCU "${APP_SHELLKEY}\.json\shell\${APP_SHELLVERB}"
+  DeleteRegKey HKCU "${APP_SHELLKEY}\.srt\shell\${APP_SHELLVERB}"
 
   ; The user's settings are left alone on purpose: reinstalling should not lose
   ; a customised shortcut or layout. They live in
