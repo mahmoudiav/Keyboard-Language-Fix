@@ -101,6 +101,16 @@ public partial class SettingsWindow : Window
             ? "Installed from the Microsoft Store, so Windows owns this switch — it opens Startup Apps."
             : string.Empty;
 
+        ContextMenuBox.IsChecked = _settings.ShowInContextMenu;
+        if (!ShellMenu.IsSupported)
+        {
+            // A packaged install cannot add the entry: its registry writes are
+            // redirected into the package, where Explorer never looks.
+            ContextMenuBox.IsEnabled = false;
+            ContextMenuHint.Text =
+                "Installed from the Microsoft Store, which does not let an app add this entry itself.";
+        }
+
         PreviewInput.Text = "hgsghl ugd;l";
     }
 
@@ -253,6 +263,7 @@ public partial class SettingsWindow : Window
             RestoreClipboard = RestoreClipboardBox.IsChecked == true,
             ShowNotifications = NotificationsBox.IsChecked == true,
             RunAtStartup = StartupBox.IsChecked == true,
+            ShowInContextMenu = ContextMenuBox.IsChecked == true,
             ClipboardTimeoutMs = timeout,
             CustomMap = _settings.CustomMap
         }.Normalised();
@@ -260,6 +271,11 @@ public partial class SettingsWindow : Window
         if (!PackageInfo.IsPackaged)
         {
             StartupManager.TrySetEnabled(updated.RunAtStartup);
+        }
+
+        if (ShellMenu.IsSupported && !ShellMenu.TrySetEnabled(updated.ShowInContextMenu))
+        {
+            ContextMenuHint.Text = "Windows would not let the right-click entry be changed.";
         }
 
         _settings = updated;

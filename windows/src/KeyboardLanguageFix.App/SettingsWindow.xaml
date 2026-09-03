@@ -91,6 +91,12 @@
                         <CheckBox x:Name="StartupBox" Content="Start with Windows" Click="OnStartupClicked" />
                         <TextBlock x:Name="StartupHint" Style="{StaticResource Hint}" />
 
+                        <CheckBox x:Name="ContextMenuBox" Margin="0,10,0,0"
+                                  Content="Add &quot;Fix keyboard language&quot; to the right-click menu" />
+                        <TextBlock x:Name="ContextMenuHint" Style="{StaticResource Hint}"
+                                   TextWrapping="Wrap"
+                                   Text="Right-click a text file in File Explorer to convert the whole file. On Windows 11 it sits under &quot;Show more options&quot;. This is for files only — no program lets another one add a command to the menu you get on selected text, which is what the shortcut is for." />
+
                         <TextBlock Text="How long to wait for the app to answer (ms)"
                                    Style="{StaticResource FieldLabel}" Margin="0,14,0,4" />
                         <TextBox x:Name="TimeoutBox" Width="90" HorizontalAlignment="Left" Padding="6,4" />

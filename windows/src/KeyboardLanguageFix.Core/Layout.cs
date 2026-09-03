@@ -17,6 +17,7 @@ public sealed class Layout
         string nameLocal,
         bool rightToLeft,
         bool shiftFallback,
+        bool sameScript,
         string scriptPattern,
         IReadOnlyDictionary<string, string> baseLayer,
         IReadOnlyDictionary<string, string> shiftLayer)
@@ -26,6 +27,7 @@ public sealed class Layout
         NameLocal = nameLocal;
         RightToLeft = rightToLeft;
         ShiftFallback = shiftFallback;
+        SameScript = sameScript;
         BaseLayer = baseLayer;
         ShiftLayer = shiftLayer;
         _script = new Regex(scriptPattern, RegexOptions.Compiled | RegexOptions.CultureInvariant);
@@ -48,6 +50,13 @@ public sealed class Layout
     /// fall back to the un-shifted layer instead of being left alone.
     /// </summary>
     public bool ShiftFallback { get; }
+
+    /// <summary>
+    /// True when this layout writes the Latin alphabet as well (Spanish), so
+    /// the direction of a conversion cannot be decided by weighing Latin
+    /// letters against another alphabet.
+    /// </summary>
+    public bool SameScript { get; }
 
     /// <summary>The un-shifted layer, keyed by the US QWERTY character.</summary>
     public IReadOnlyDictionary<string, string> BaseLayer { get; }

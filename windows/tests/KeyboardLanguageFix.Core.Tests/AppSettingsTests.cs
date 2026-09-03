@@ -81,6 +81,15 @@ public class AppSettingsTests
     }
 
     [Fact]
+    public void TheRightClickEntryIsOnForSettingsFilesWrittenBeforeItExisted()
+    {
+        // Someone upgrading from 1.0.0 has a settings file with no such key.
+        // Reading it must give them the entry, not silently withhold it.
+        Assert.True(AppSettings.FromJson("{\"primaryLayout\":\"ar\"}").ShowInContextMenu);
+        Assert.False(AppSettings.FromJson("{\"showInContextMenu\":false}").ShowInContextMenu);
+    }
+
+    [Fact]
     public void ConversionOptionsAlwaysRecogniseThePrimaryLayout()
     {
         var settings = new AppSettings { PrimaryLayout = "ru", EnabledLayouts = new List<string> { "ar" } };

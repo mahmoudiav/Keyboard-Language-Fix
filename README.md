@@ -3,7 +3,7 @@
 **Text typed in the wrong keyboard layout, fixed in one keystroke.** Select it,
 press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Space</kbd>, and it is re-typed in
 the language you meant — no deleting, no retyping. A free Windows app and a
-browser extension, for Arabic, Persian, Russian, Hebrew and Greek.
+browser extension, for Arabic, Persian, Russian, Hebrew, Greek and Spanish.
 
 **كتبت بلغة الكيبورد الخطأ؟** حدّد النص واضغط اختصاراً واحداً، فيُعاد كتابته
 باللغة التي قصدتها. مجاني، لويندوز وللمتصفحات.
@@ -33,7 +33,7 @@ ghbdtn         →   привет
 - **بلا تحديد**: إن لم تحدّد شيئاً، تُحوَّل الكلمة التي قبل المؤشّر مباشرة — وهي الحالة الأشيع.
 - **نص غير قابل للتعديل**: يُحوَّل النص المحدَّد ويُنسخ إلى الحافظة، فيكفي <kbd>Ctrl</kbd> + <kbd>V</kbd>.
 - **التراجع يعمل**: التبديل يمرّ عبر آلية التحرير الخاصة بالمتصفح، فيُلغيه <kbd>Ctrl</kbd> + <kbd>Z</kbd> كأي تعديل آخر.
-- **خمسة تخطيطات مدمجة**: العربية (101)، والفارسية، والروسية (ЙЦУКЕН)، والعبرية، واليونانية.
+- **ستة تخطيطات مدمجة**: العربية (101)، والفارسية، والروسية (ЙЦУКЕН)، والعبرية، واليونانية، والإسبانية (إسبانيا).
 - **قائمة سياق** (زر الفأرة الأيمن) و**نافذة منبثقة** للتحويل اليدوي للنص المنسوخ.
 - **تخصيص**: اختصار داخل الصفحة، ومواقع مُستثناة، وتعديل جدول المفاتيح يدوياً.
 - **بلا خوادم**: كل شيء يجري داخل المتصفح، ولا يُرسل أي نص إلى أي مكان.
@@ -47,6 +47,12 @@ ghbdtn         →   привет
 
 **للمستخدم العادي**: نزّل ملف `Setup.exe` من صفحة
 [Releases](../../releases) وانقر عليه نقراً مزدوجاً. لا يحتاج صلاحيات مدير.
+
+**قائمة الزر الأيمن**: يضيف التطبيق أمر «Fix keyboard language» إلى قائمة الزر
+الأيمن للملفات النصية في مستكشف الملفات، فتُحوَّل محتويات الملف كاملة مع عرض
+النتيجة قبل الحفظ. في ويندوز 11 يظهر الأمر تحت «إظهار المزيد من الخيارات». أما
+النص المحدَّد داخل البرامج فلا سبيل إليه إلا الاختصار: ويندوز لا يتيح لأي برنامج
+إضافة أمر إلى قائمة النص المحدَّد في برنامج آخر.
 
 **للمطوّر**: `./windows/build/build-setup.sh` يبني ملف التثبيت، أو
 `windows\build\build-exe.cmd` لملف تنفيذي مجرّد. التفاصيل في
@@ -108,7 +114,7 @@ npm run build     # ينتج dist/keyboard-language-fix-{chrome,firefox}-<versio
 ```
 manifest.json               Chrome / Edge / Brave  (MV3)
 manifest.firefox.json       Firefox                (MV3)
-src/core/layouts.js         layout tables (ar, fa, ru, he, el)
+src/core/layouts.js         layout tables (ar, fa, ru, he, el, es)
 src/core/converter.js       the conversion engine + script detection
 src/core/settings.js        chrome.storage wrapper and defaults
 src/content/content.js      selection handling and in-place replacement
@@ -145,7 +151,7 @@ Highlights:
 - With nothing selected it converts the word before the cursor.
 - Read-only text is converted to the clipboard instead.
 - <kbd>Ctrl</kbd> + <kbd>Z</kbd> undoes the swap like any other edit.
-- Arabic (101), Persian, Russian (ЙЦУКЕН), Hebrew and Greek are built in.
+- Arabic (101), Persian, Russian (ЙЦУКЕН), Hebrew, Greek and Spanish (Spain) are built in.
 - Right-click menu, plus a popup for converting pasted text by hand.
 - Everything runs locally; no text ever leaves the browser.
 
@@ -159,14 +165,20 @@ WPF app packaged as MSIX for the Microsoft Store.
 [Releases page](../../releases) and double-click it. Per-user install, no
 administrator rights needed.
 
+**In the right-click menu**: the app adds a "Fix keyboard language" entry for
+text files in File Explorer, which converts the whole file and shows the result
+before anything is written. Windows 11 puts it under "Show more options".
+Selected text inside a program is the shortcut's job — Windows gives no program
+a way to add a command to another program's text menu.
+
 **To build it yourself**: `./windows/build/build-setup.sh` makes the installer
 (.NET 8 SDK and NSIS, both of which cross-compile), or
 `windows\build\build-exe.cmd` makes a plain executable. See
 [windows/README.md](windows/README.md).
 
 Both platforms share one source of truth: the C# layout tables are generated
-from `src/core/layouts.js`, and the C# test suite replays 1028 cases recorded
-from the JavaScript engine, so the two cannot drift apart.
+from `src/core/layouts.js`, and the C# test suite replays the 1,650 cases
+recorded from the JavaScript engine, so the two cannot drift apart.
 
 ```bash
 npm run generate       # regenerate the C# tables after editing layouts.js
@@ -207,6 +219,14 @@ Add an entry to `LAYOUTS` in `src/core/layouts.js` with:
 - `shift` — the shifted layer
 - `script` — a regex matching the characters of the target script
 - `shiftFallback: true` if the script has no upper case
+- `sameScript: true` if the layout writes the Latin alphabet too
+
+A key may be more than one character, which is how dead keys are expressed:
+Spanish spells `"'a": "á"`, because on a Spanish keyboard that letter is the
+acute key and then the vowel. `sameScript` exists for the same layout — when
+both sides are Latin the direction cannot be decided by weighing one alphabet
+against the other, so it turns on the characters a US keyboard cannot produce
+at all (`ñ`, `á`), and `script` must then list only those.
 
 The test suite checks every table for round-trip integrity and for keys that
 accidentally produce the same character twice, so a new layout is covered the

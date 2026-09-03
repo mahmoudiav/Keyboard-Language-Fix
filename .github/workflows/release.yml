@@ -27,6 +27,14 @@ on:
 
 permissions:
   contents: write
+  id-token: write      # to sign the build provenance
+  attestations: write  # to publish it
+
+# Never cancel a release in flight — it publishes files people download. This
+# only stops the same tag being released twice at once.
+concurrency:
+  group: release-${{ github.event_name == 'workflow_dispatch' && inputs.version || github.ref_name }}
+  cancel-in-progress: false
 
 jobs:
   installer:
@@ -41,6 +49,8 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
+          cache: true
+          cache-dependency-path: windows/**/*.csproj
 
       # NSIS cross-compiles, so the Windows installer is built on Linux.
       - name: Install NSIS and 7z
@@ -99,6 +109,14 @@ jobs:
             esac
           done
           ls -1
+
+      # Records, verifiably, that these exact bytes came out of this repository
+      # at this commit. Anyone can check it with:
+      #   gh attestation verify <file> --repo mahmoudiav/Keyboard-Language-Fix
+      - name: Attest what was built
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: dist/*-Setup.exe
 
       - name: Publish checksums alongside the installers
         working-directory: dist

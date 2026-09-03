@@ -52,6 +52,7 @@ const blocks = layouts.LAYOUTS.map((layout) => `        private static Layout ${
             nameLocal: ${csString(layout.nameLocal)},
             rightToLeft: ${layout.rtl ? 'true' : 'false'},
             shiftFallback: ${layout.shiftFallback ? 'true' : 'false'},
+            sameScript: ${layout.sameScript ? 'true' : 'false'},
             scriptPattern: ${csString(layout.script.source)},
             baseLayer: new Dictionary<string, string>(StringComparer.Ordinal)
             {

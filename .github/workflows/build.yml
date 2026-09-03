@@ -10,8 +10,20 @@ name: Build
 on:
   push:
     branches: ['**']
+    # Prose changes cannot break a build. Without this, editing the README
+    # spends ten minutes of runners proving nothing.
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'LICENSE'
   pull_request:
   workflow_dispatch:
+
+# Several pushes in a row should not queue several full builds. Only the newest
+# commit on a branch is worth checking; the rest are already out of date.
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -30,6 +42,8 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
+          cache: true
+          cache-dependency-path: windows/**/*.csproj
 
       - name: Unit, manifest, locale and generated-file checks
         run: npm test
@@ -67,6 +81,8 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
+          cache: true
+          cache-dependency-path: windows/**/*.csproj
 
       # NSIS cross-compiles, so the Windows installer is built and checked here
       # on every push rather than only at release time.
@@ -83,24 +99,26 @@ jobs:
           if-no-files-found: error
 
   windows:
+    # Proves the app still builds on a real Windows machine, since everything
+    # else here cross-compiles. One architecture is enough for that; the release
+    # workflow builds ARM64 when it matters.
     name: Windows executable
     runs-on: windows-latest
-    strategy:
-      matrix:
-        architecture: [x64, arm64]
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
+          cache: true
+          cache-dependency-path: windows/**/*.csproj
 
       - name: Build the executable
         shell: pwsh
-        run: ./windows/build/build-exe.ps1 -Architecture ${{ matrix.architecture }} -Output out
+        run: ./windows/build/build-exe.ps1 -Architecture x64 -Output out
 
       - uses: actions/upload-artifact@v4
         with:
-          name: KeyboardLanguageFix-${{ matrix.architecture }}
+          name: KeyboardLanguageFix-x64
           path: out/KeyboardLanguageFix.exe
           if-no-files-found: error

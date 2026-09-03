@@ -115,6 +115,52 @@ test('Persian maps its own letters, not the Arabic ones', () => {
   assert.equal(convert(']', fa).text, 'چ');
 });
 
+test('Spanish: the ñ key and the accents a US keyboard cannot reach', () => {
+  const es = { primaryLayout: 'es', enabledLayouts: ['es'] };
+  assert.equal(convert('Espa;a', es).text, 'España');
+  assert.equal(convert('Ma;ana', es).text, 'Mañana');
+  assert.equal(convert('a;o', es).text, 'año');
+});
+
+test('Spanish dead keys compose with the vowel that follows', () => {
+  const es = { primaryLayout: 'es', enabledLayouts: ['es'], mode: 'toLayout' };
+  // Two keystrokes, one letter: the acute key, then the vowel.
+  assert.equal(convert("est'a", es).text, 'está');
+  assert.equal(convert("'Angel", es).text, 'Ángel');
+  assert.equal(convert('ping"uino', es).text, 'pingüino');
+  // A capital reached through a dead key is deliberate, so it stays a capital.
+  assert.equal(convert("'ANGEL", es).text, 'ÁNGEL');
+  // The dead key on its own is still the accent character.
+  assert.equal(convert("'", es).text, '´');
+});
+
+test('Spanish letters are identical, so only the punctuation moves', () => {
+  const es = { primaryLayout: 'es', enabledLayouts: ['es'], mode: 'toLayout' };
+  // a-z sits on the same keys in both layouts: nothing to fix, so nothing is
+  // touched — and the caller is told so rather than being handed a copy.
+  assert.equal(convert('hello world', es).changed, false);
+  assert.equal(convert('HOLA', es).text, 'HOLA');
+});
+
+test('Spanish direction turns on what a US keyboard cannot type', () => {
+  const es = { primaryLayout: 'es', enabledLayouts: ['es'] };
+  // Both alphabets are Latin, so counting letters decides nothing. One "ñ" is
+  // proof the text has already been through the Spanish layout.
+  assert.equal(convert('Espa;a', es).direction, 'toLayout');
+  assert.equal(convert('España', es).direction, 'toLatin');
+  assert.equal(convert('España', es).text, 'Espa;a');
+  // The everyday complaint of anyone writing code on a Spanish keyboard.
+  assert.equal(convert('console.log)x=ñ', es).text, 'console.log(x);');
+});
+
+test('Spanish stays out of the way of the other layouts', () => {
+  const both = { primaryLayout: 'ar', enabledLayouts: ['ar', 'es'] };
+  assert.equal(convert('مرحبا', both).text, 'lvpfh');
+  assert.equal(detectLayout('mañana', ['ar', 'es', 'ru']).id, 'es');
+  assert.equal(detectLayout('مرحبا', ['ar', 'es']).id, 'ar');
+  assert.equal(detectLayout('hello world', ['ar', 'es']), null);
+});
+
 test('detectLayout picks the script actually present', () => {
   assert.equal(detectLayout('مرحبا', ['ar', 'ru', 'he']).id, 'ar');
   assert.equal(detectLayout('привет', ['ar', 'ru', 'he']).id, 'ru');

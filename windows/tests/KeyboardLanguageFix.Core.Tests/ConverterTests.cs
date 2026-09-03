@@ -205,6 +205,63 @@ public class ConverterTests
             Converter.Convert("مرحبا", Arabic(ConversionMode.ToLayout)).Text);
     }
 
+    private static ConversionOptions Spanish(ConversionMode mode = ConversionMode.Auto) => new()
+    {
+        PrimaryLayout = "es",
+        EnabledLayouts = new[] { "es" },
+        Mode = mode
+    };
+
+    [Theory]
+    [InlineData("Espa;a", "España")]
+    [InlineData("Ma;ana", "Mañana")]
+    [InlineData("a;o", "año")]
+    public void SpanishReachesTheLetterAUsKeyboardHasNot(string input, string expected)
+    {
+        Assert.Equal(expected, Converter.Convert(input, Spanish()).Text);
+    }
+
+    [Theory]
+    // Two keystrokes, one letter: the dead accent key, then the vowel.
+    [InlineData("est'a", "está")]
+    [InlineData("'Angel", "Ángel")]
+    [InlineData("ping\"uino", "pingüino")]
+    [InlineData("'ANGEL", "ÁNGEL")]
+    [InlineData("'", "´")]
+    public void SpanishDeadKeysComposeWithTheVowelThatFollows(string input, string expected)
+    {
+        Assert.Equal(expected, Converter.Convert(input, Spanish(ConversionMode.ToLayout)).Text);
+    }
+
+    [Fact]
+    public void SpanishLeavesTheLettersAlone()
+    {
+        // a-z sits on the same keys in both layouts, so there is nothing to fix.
+        Assert.False(Converter.Convert("hello world", Spanish(ConversionMode.ToLayout)).Changed);
+        Assert.Equal("HOLA", Converter.Convert("HOLA", Spanish(ConversionMode.ToLayout)).Text);
+    }
+
+    [Fact]
+    public void SpanishDirectionTurnsOnWhatAUsKeyboardCannotType()
+    {
+        // Both alphabets are Latin, so counting letters decides nothing. One
+        // "ñ" is proof the text has already been through the Spanish layout.
+        Assert.Equal(ConversionDirection.ToLayout, Converter.Convert("Espa;a", Spanish()).Direction);
+        Assert.Equal(ConversionDirection.ToLatin, Converter.Convert("España", Spanish()).Direction);
+        Assert.Equal("Espa;a", Converter.Convert("España", Spanish()).Text);
+
+        // The everyday complaint of anyone writing code on a Spanish keyboard.
+        Assert.Equal("console.log(x);", Converter.Convert("console.log)x=ñ", Spanish()).Text);
+    }
+
+    [Fact]
+    public void SpanishStaysOutOfTheWayOfTheOtherLayouts()
+    {
+        Assert.Equal("es", Converter.DetectLayout("mañana", new[] { "ar", "es", "ru" })?.Id);
+        Assert.Equal("ar", Converter.DetectLayout("مرحبا", new[] { "ar", "es" })?.Id);
+        Assert.Null(Converter.DetectLayout("hello world", new[] { "ar", "es" }));
+    }
+
     [Fact]
     public void EveryLayoutMapsEachOfItsOwnCharactersBackToAKey()
     {
